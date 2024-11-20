@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Real Love - Album</title>
+
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="./assets/favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Embed Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./assets/css/main.css" />
+
+    <!-- Script -->
+    <script src="./assets/js/script.js"></script>
+  </head>
+  <body>
+    <header id="header">
+        @await Html.PartialAsync("_Header")
+    </header>
+
+    <main>
+      <!-- Section Album -->
+      <section class="section">
+        <div class="container max-width-100">
+           <div class="section__top">
+              <h2 class="section__heading">Hãy mặc đồ cưới cùng Real Love nào!</h2>
+              <p class="section__desc">
+                  Trang phục cưới tại Real Love không chỉ là những bộ váy cưới tinh tế mà còn là tác phẩm nghệ thuật, mang đến sự hoàn hảo cho cô dâu trong ngày trọng đại. Mỗi chiếc váy được thiết kế tỉ mỉ, từ chất liệu vải cao cấp đến những chi tiết thêu ren, đá quý, giúp tôn lên vẻ đẹp thanh thoát và quyến rũ của cô dâu. Real Love Studio luôn chú trọng đến sự thoải mái, phù hợp với từng dáng người, mang đến sự tự tin và lộng lẫy cho cô dâu trong mọi khoảnh khắc. Từ những bộ váy cổ điển đến hiện đại, mỗi lựa chọn đều mang lại một dấu ấn riêng biệt, khiến ngày cưới trở thành kỷ niệm không thể quên.  
+              </p>
+            </div>
+            <div class="album">
+              <div class="row row-cols-4 row-cols-lg-3 row-cols-md-2 g-2">
+
+              @if (ViewBag.imageUrlWeddinggown1 != null)
+                { 
+                  <div class="col">
+                    <div class="album-box-img" data-album="album1" onclick="redirectToAlbum(this)">
+                      <a href="javascript:void(0)" class="album-box">
+                        <img class="album-img" src="@ViewBag.imageUrlWeddinggown1" alt="Uploaded Image" />
+                        <div class="album-text-box">
+                          <h2 class="album-text-inner">Trang phục cưới 1</h2>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                } else if (ViewBag.Message!= null)
+                {
+                    <p>@ViewBag.Message</p>
+                }
+
+                @if (ViewBag.imageUrlWeddinggown2 != null)
+                { 
+                  <div class="col">
+                    <div class="album-box-img" data-album="album2" onclick="redirectToAlbum(this)">
+                      <a href="javascript:void(0)" class="album-box">
+                        <img class="album-img" src="@ViewBag.imageUrlWeddinggown2" alt="Uploaded Image" />
+                        <div class="album-text-box">
+                          <h2 class="album-text-inner">Trang phục cưới 2</h2>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                } else if (ViewBag.Message!= null)
+                  {
+                      <p>@ViewBag.Message</p>
+                  }
+              
+              @if (ViewBag.imageUrlWeddinggown3 != null)
+                { 
+                  <div class="col">
+                    <div class="album-box-img" data-album="album3" onclick="redirectToAlbum(this)">
+                      <a href="javascript:void(0)" class="album-box">
+                        <img class="album-img" src="@ViewBag.imageUrlWeddinggown3" alt="Uploaded Image" />
+                        <div class="album-text-box">
+                          <h2 class="album-text-inner">Trang phục cưới 3</h2>
+                        </div>
+                      </a>  
+                    </div>
+                  </div>
+                } else if (ViewBag.Message!= null)
+                {
+                    <p>@ViewBag.Message</p>
+                }
+
+              @if (ViewBag.imageUrlWeddinggown4 != null)
+                { 
+                  <div class="col">
+                    <div class="album-box-img" data-album="album4" onclick="redirectToAlbum(this)">
+                      <a href="javascript:void(0)" class="album-box">
+                        <img class="album-img" src="@ViewBag.imageUrlWeddinggown4" alt="Uploaded Image" />
+                        <div class="album-text-box">
+                          <h2 class="album-text-inner">Trang phục cưới 4</h2>
+                        </div>
+                      </a>  
+                    </div>
+                  </div>
+                } else if (ViewBag.Message!= null)
+                {
+                    <p>@ViewBag.Message</p>
+                }
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+        <footer class="footer" id="footer">
+        @await Html.PartialAsync("_Footer")
+    </footer>
+    @await Html.PartialAsync("play-music-btn")
+    @await Html.PartialAsync("contact-buttons")
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/detail-album.js"></script>
+    <script src="./assets/js/album-page.js"></script>
+  </body>
+</html>

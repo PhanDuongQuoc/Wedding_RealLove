@@ -1,0 +1,897 @@
+
+@model dynamic
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quản lý Album - Admin</title>
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="~/assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="~/assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="~/assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="~/assets/favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="~/assets/favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Embed Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Styles -->
+   <link rel="stylesheet" href="~/assets/css/main.css" />
+    <!-- Script -->
+    <script src="./assets/js/script.js"></script>
+  </head>
+  <body class="page">
+    <div class="page__container-wrap">
+      <h1 class="page__title">Quản lý Hình Ảnh Real Love Page</h1>
+      <div class="quick-menu">
+        <a href="#upload_albumdetail">
+          <button>Quản lý Album</button>
+        </a>
+        <a href="#upload_slider">
+          <button>Quản lý Slider Real Love</button>
+        </a>
+        <a href="#image_album">
+          <button>Ảnh đại diện Album</button>
+        </a>
+        <a href="#upload_service">
+          <button>Ảnh đại diện Services</button>
+        </a>
+        <a href="#upload_introduce">
+          <button>Ảnh trang Giới Thiệu</button>
+        </a>
+        <a href="#upload_Weddinggownpage">
+          <button>Ảnh trang Phục Cưới</button>
+        </a>
+        <a href="#upload_Makeup">
+          <button>Ảnh Trang Điểm</button>
+        </a>
+      </div>
+        <!-- Mỗi album sẽ có phần chỉnh sửa ảnh đại diện riêng -->
+        <!-- Danh sách upload hình ảnh Album 1-->
+      <div class="admin-albums">
+        <h2 class="admin-albums__title">Danh Sách Hình Ảnh album 1</h2>
+        <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 g-3">
+            <!-- Form để upload ảnh -->
+            <form class="col" method="post" enctype="multipart/form-data" asp-controller="Upload" asp-action="UploadAlbum1">
+                <div class="col">
+                    <!-- Hiển thị danh sách hình ảnh của Album 1 -->
+                    @if (ViewBag.ImageListAlbum1 != null && ViewBag.ImageListAlbum1.Count > 0)
+                    {
+                        <div class="image-gallery" style="display: flex; flex-wrap: wrap; gap: 10px;">
+                            @foreach (var imageUrl in ViewBag.ImageListAlbum1)
+                            {
+                                <div class="album-block" style="width: 100px; height: 100px; overflow: hidden; border: 1px solid #ddd; padding: 5px;">
+                                    <img src="@imageUrl" alt="Uploaded Image for Album 1" style="width: 100%; height: 100%; object-fit: cover;" />
+                                </div>
+                            }
+                        </div>
+                    }
+                    else
+                    {
+                        <p>Không có hình ảnh nào trong Album 1.</p>
+                    }
+                    
+                    <div class="form-group">
+                        <input type="file" name="file" id="imageUploadDetailAlbum1" accept="image/*" multiple />
+                    </div>
+                    <button type="submit" class="btn btn-primary">Cập nhật</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Danh sách upload hình ảnh album 2-->
+  <div class="admin-albums">
+        <h2 class="admin-albums__title">Danh Sách Hình Ảnh album 2</h2>
+        <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 g-3">
+            <!-- Form để upload ảnh -->
+            <form class="col" method="post" enctype="multipart/form-data" asp-controller="Upload" asp-action="UploadAlbum2">
+                <div class="col">
+                    <!-- Hiển thị danh sách hình ảnh của Album 1 -->
+                    @if (ViewBag.ImageListAlbum2 != null && ViewBag.ImageListAlbum2.Count > 0)
+                    {
+                        <div class="image-gallery" style="display: flex; flex-wrap: wrap; gap: 10px;">
+                            @foreach (var imageUrl in ViewBag.ImageListAlbum2)
+                            {
+                                <div class="album-block" style="width: 100px; height: 100px; overflow: hidden; border: 1px solid #ddd; padding: 5px;">
+                                    <img src="@imageUrl" alt="Uploaded Image for Album 2" style="width: 100%; height: 100%; object-fit: cover;" />
+                                </div>
+                            }
+                        </div>
+                    }
+                    else
+                    {
+                        <p>Không có hình ảnh nào trong Album 2.</p>
+                    }
+                    
+                    <div class="form-group">
+                        <input type="file" name="file" id="imageUploadDetailAlbum2" accept="image/*" multiple />
+                    </div>
+                    <button type="submit" class="btn btn-primary">Cập nhật</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- Danh sách upload hình ảnh album 3-->
+    <div class="admin-albums">
+        <h2 class="admin-albums__title">Danh Sách Hình Ảnh album 3</h2>
+        <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 g-3">
+            <!-- Form để upload ảnh -->
+            <form class="col" method="post" enctype="multipart/form-data" asp-controller="Upload" asp-action="UploadAlbum3">
+                <div class="col">
+                    <!-- Hiển thị danh sách hình ảnh của Album 1 -->
+                    @if (ViewBag.ImageListAlbum3 != null && ViewBag.ImageListAlbum3.Count > 0)
+                    {
+                        <div class="image-gallery" style="display: flex; flex-wrap: wrap; gap: 10px;">
+                            @foreach (var imageUrl in ViewBag.ImageListAlbum3)
+                            {
+                                <div class="album-block" style="width: 100px; height: 100px; overflow: hidden; border: 1px solid #ddd; padding: 5px;">
+                                    <img src="@imageUrl" alt="Uploaded Image for Album 3" style="width: 100%; height: 100%; object-fit: cover;" />
+                                </div>
+                            }
+                        </div>
+                    }
+                    else
+                    {
+                        <p>Không có hình ảnh nào trong Album 3.</p>
+                    }
+                    
+                    <div class="form-group">
+                        <input type="file" name="file" id="imageUploadDetailAlbum3" accept="image/*" multiple />
+                    </div>
+                    <button type="submit" class="btn btn-primary">Cập nhật</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Danh sách upload hình ảnh album 4-->
+    <div class="admin-albums">
+        <h2 class="admin-albums__title">Danh Sách Hình Ảnh album 4</h2>
+        <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 g-3">
+            <!-- Form để upload ảnh -->
+            <form class="col" method="post" enctype="multipart/form-data" asp-controller="Upload" asp-action="UploadAlbum4">
+                <div class="col">
+                    <!-- Hiển thị danh sách hình ảnh của Album 1 -->
+                    @if (ViewBag.ImageListAlbum4 != null && ViewBag.ImageListAlbum4.Count > 0)
+                    {
+                        <div class="image-gallery" style="display: flex; flex-wrap: wrap; gap: 10px;">
+                            @foreach (var imageUrl in ViewBag.ImageListAlbum4)
+                            {
+                                <div class="album-block" style="width: 100px; height: 100px; overflow: hidden; border: 1px solid #ddd; padding: 5px;">
+                                    <img src="@imageUrl" alt="Uploaded Image for Album 4" style="width: 100%; height: 100%; object-fit: cover;" />
+                                </div>
+                            }
+                        </div>
+                    }
+                    else
+                    {
+                        <p>Không có hình ảnh nào trong Album 3.</p>
+                    }
+                    
+                    <div class="form-group">
+                        <input type="file" name="file" id="imageUploadDetailAlbum4" accept="image/*" multiple />
+                    </div>
+                    <button type="submit" class="btn btn-primary">Cập nhật</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Danh sách upload hình ảnh album 5-->
+    <div class="admin-albums">
+        <h2 class="admin-albums__title">Danh Sách Hình Ảnh album 5</h2>
+        <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 g-3">
+            <!-- Form để upload ảnh -->
+            <form class="col" method="post" enctype="multipart/form-data" asp-controller="Upload" asp-action="UploadAlbum5">
+                <div class="col">
+                    <!-- Hiển thị danh sách hình ảnh của Album 1 -->
+                    @if (ViewBag.ImageListAlbum5 != null && ViewBag.ImageListAlbum5.Count > 0)
+                    {
+                        <div class="image-gallery" style="display: flex; flex-wrap: wrap; gap: 10px;">
+                            @foreach (var imageUrl in ViewBag.ImageListAlbum5)
+                            {
+                                <div class="album-block" style="width: 100px; height: 100px; overflow: hidden; border: 1px solid #ddd; padding: 5px;">
+                                    <img src="@imageUrl" alt="Uploaded Image for Album 5" style="width: 100%; height: 100%; object-fit: cover;" />
+                                </div>
+                            }
+                        </div>
+                    }
+                    else
+                    {
+                        <p>Không có hình ảnh nào trong Album 3.</p>
+                    }
+                    
+                    <div class="form-group">
+                        <input type="file" name="file" id="imageUploadDetailAlbum5" accept="image/*" multiple />
+                    </div>
+                    <button type="submit" class="btn btn-primary">Cập nhật</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Danh sách upload hình ảnh album 6-->
+    <div class="admin-albums">
+        <h2 class="admin-albums__title">Danh Sách Hình Ảnh album 6</h2>
+        <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 g-3">
+            <!-- Form để upload ảnh -->
+            <form class="col" method="post" enctype="multipart/form-data" asp-controller="Upload" asp-action="UploadAlbum6">
+                <div class="col">
+                    <!-- Hiển thị danh sách hình ảnh của Album 1 -->
+                    @if (ViewBag.ImageListAlbum6 != null && ViewBag.ImageListAlbum6.Count > 0)
+                    {
+                        <div class="image-gallery" style="display: flex; flex-wrap: wrap; gap: 10px;">
+                            @foreach (var imageUrl in ViewBag.ImageListAlbum6)
+                            {
+                                <div class="album-block" style="width: 100px; height: 100px; overflow: hidden; border: 1px solid #ddd; padding: 5px;">
+                                    <img src="@imageUrl" alt="Uploaded Image for Album 6" style="width: 100%; height: 100%; object-fit: cover;" />
+                                </div>
+                            }
+                        </div>
+                    }
+                    else
+                    {
+                        <p>Không có hình ảnh nào trong Album 6.</p>
+                    }
+                    
+                    <div class="form-group">
+                        <input type="file" name="file" id="imageUploadDetailAlbum6" accept="image/*" multiple />
+                    </div>
+                    <button type="submit" class="btn btn-primary">Cập nhật</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Danh sách upload hình ảnh album 7-->
+    <div class="admin-albums">
+        <h2 class="admin-albums__title">Danh Sách Hình Ảnh album 7</h2>
+        <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 g-3">
+            <!-- Form để upload ảnh -->
+            <form class="col" method="post" enctype="multipart/form-data" asp-controller="Upload" asp-action="UploadAlbum7">
+                <div class="col">
+                    <!-- Hiển thị danh sách hình ảnh của Album 1 -->
+                    @if (ViewBag.ImageListAlbum7 != null && ViewBag.ImageListAlbum7.Count > 0)
+                    {
+                        <div class="image-gallery" style="display: flex; flex-wrap: wrap; gap: 10px;">
+                            @foreach (var imageUrl in ViewBag.ImageListAlbum7)
+                            {
+                                <div class="album-block" style="width: 100px; height: 100px; overflow: hidden; border: 1px solid #ddd; padding: 5px;">
+                                    <img src="@imageUrl" alt="Uploaded Image for Album 7" style="width: 100%; height: 100%; object-fit: cover;" />
+                                </div>
+                            }
+                        </div> 
+                    }
+                    else
+                    {
+                        <p>Không có hình ảnh nào trong Album 7.</p>
+                    }
+                    
+                    <div class="form-group">
+                        <input type="file" name="file" id="imageUploadDetailAlbum7" accept="image/*" multiple />
+                    </div>
+                    <button type="submit" class="btn btn-primary">Cập nhật</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Danh sách upload hình ảnh album 8-->
+    <div class="admin-albums">
+        <h2 class="admin-albums__title">Danh Sách Hình Ảnh album 8</h2>
+        <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 g-3">
+            <!-- Form để upload ảnh -->
+            <form class="col" method="post" enctype="multipart/form-data" asp-controller="Upload" asp-action="UploadAlbum8">
+                <div class="col">
+                    <!-- Hiển thị danh sách hình ảnh của Album 1 -->
+                    @if (ViewBag.ImageListAlbum8 != null && ViewBag.ImageListAlbum8.Count > 0)
+                    {
+                        <div class="image-gallery" style="display: flex; flex-wrap: wrap; gap: 10px;">
+                            @foreach (var imageUrl in ViewBag.ImageListAlbum8)
+                            {
+                                <div class="album-block" style="width: 100px; height: 100px; overflow: hidden; border: 1px solid #ddd; padding: 5px;">
+                                    <img src="@imageUrl" alt="Uploaded Image for Album 8" style="width: 100%; height: 100%; object-fit: cover;" />
+                                </div>
+                            }
+                        </div>
+                    }
+                    else
+                    {
+                        <p>Không có hình ảnh nào trong Album 8.</p>
+                    }
+                    
+                    <div class="form-group">
+                        <input type="file" name="file" id="imageUploadDetailAlbum8" accept="image/*" multiple />
+                    </div>
+                    <button type="submit" class="btn btn-primary">Cập nhật</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+      <!-- Khu vực hiển thị hình ảnh -->
+      <div class="album album-row" id="album"></div>
+      <!-- Khu vực thay đổi slider -->
+      <div class="admin-albums" id="upload_slider">
+        <h2 class="admin-albums__title">Chỉnh sửa ảnh Slider Real Love</h2>
+        <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 g-3">
+          <!-- Form để upload ảnh -->
+          <form class="col" method="post" enctype="multipart/form-data" asp-controller="Upload" asp-action="UploadSlider1">
+              <div class="col">
+                  <h3>Silder 1</h3>
+                  @if (ViewBag.ImageUrlSlider1 != null)
+                  {
+                      <div class="album-block">
+                          <img src="@ViewBag.ImageUrlSlider1" alt="Uploaded Image for Slider 1" />
+                      </div>
+                  }
+                  else if (ViewBag.MessageSlider1 != null)
+                  {
+                      <p>@ViewBag.MessageSlider1</p>
+                  }
+                  <input type="file" name="file" id="imageUploadSlider1" accept="image/*" />
+                  <button type="submit">Cập nhật</button>
+              </div>
+          </form>
+
+          <form class="col" method="post" enctype="multipart/form-data" asp-controller="Upload" asp-action="UploadSlider2">
+              <div class="col">
+                  <h3>Silder 2</h3>
+                  @if (ViewBag.ImageUrlSlider2 != null)
+                  {
+                      <div class="album-block">
+                          <img src="@ViewBag.ImageUrlSlider2" alt="Uploaded Image for Slider 2" />
+                      </div>
+                  }
+                  else if (ViewBag.MessageSlider2 != null)
+                  {
+                      <p>@ViewBag.MessageSlider2</p>
+                  }
+                  <input type="file" name="file" id="imageUploadSlider2" accept="image/*" />
+                  <button type="submit">Cập nhật</button>
+              </div>
+          </form>
+  
+          <form class="col" method="post" enctype="multipart/form-data" asp-controller="Upload" asp-action="UploadSlider3">
+              <div class="col">
+                  <h3>Silder 3</h3>
+                  @if (ViewBag.ImageUrlSlider3 != null)
+                  {
+                      <div class="album-block">
+                          <img src="@ViewBag.ImageUrlSlider3" alt="Uploaded Image for Slider 3" />
+                      </div>
+                  }
+                  else if (ViewBag.MessageSlider3 != null)
+                  {
+                      <p>@ViewBag.MessageSlider3</p>
+                  }
+                  <input type="file" name="file" id="imageUploadSlider2" accept="image/*" />
+                  <button type="submit">Cập nhật</button>
+              </div>
+          </form>
+        </div>
+      </div>
+
+
+
+
+      <!-- Mỗi album sẽ có phần chỉnh sửa ảnh đại diện riêng -->
+      <div class="admin-albums" id="image_album">
+        <h2 class="admin-albums__title">Chỉnh sửa ảnh đại diện Album</h2>
+        <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 g-3">
+          <!-- Form để upload ảnh -->
+            <form class="col" method="post" enctype="multipart/form-data" asp-controller="Upload" asp-action="UploadImage">
+              <div class="col">
+                  <h3>Album 1</h3>
+                  @if (ViewBag.ImageUrl != null)
+                  {
+                      <div class="album-block">
+                          <img src="@ViewBag.ImageUrl" alt="Uploaded Image for Album 1" />
+                      </div>
+                  }
+                  else if (ViewBag.MessageAlbum1 != null)
+                  {
+                      <p>@ViewBag.MessageAlbum1</p>
+                  }
+                  <input type="file" name="file" id="imageUpload1" accept="image/*" />
+                  <button type="submit">Cập nhật</button>
+              </div>
+          </form>
+
+          <form class="col" method="post" enctype="multipart/form-data" asp-controller="Upload" asp-action="UploadImage1">
+              <div class="col">
+                  <h3>Album 2</h3>
+                  @if (ViewBag.ImageUrlAlbum2 != null)
+                  {
+                      <div class="album-block">
+                          <img src="@ViewBag.ImageUrlAlbum2" alt="Uploaded Image for Album 2" />
+                      </div>
+                  }
+                  else if (ViewBag.MessageAlbum2 != null)
+                  {
+                      <p>@ViewBag.MessageAlbum2</p>
+                  }
+                  <input type="file" name="file" id="imageUpload2" accept="image/*" />
+                  <button type="submit">Cập nhật</button>
+              </div>
+          </form>
+  
+          <form class="col" method="post" enctype="multipart/form-data" asp-controller="Upload" asp-action="UploadImage2">
+              <div class="col">
+                  <h3>Album 3</h3>
+                  @if (ViewBag.ImageUrlAlbum3 != null)
+                  {
+                      <div class="album-block">
+                          <img src="@ViewBag.ImageUrlAlbum3" alt="Uploaded Image for Album 3" />
+                      </div>
+                  }
+                  else if (ViewBag.MessageAlbum3 != null)
+                  {
+                      <p>@ViewBag.MessageAlbum3</p>
+                  }
+                  <input type="file" name="file" id="imageUpload3" accept="image/*" />
+                  <button type="submit">Cập nhật</button>
+              </div>
+          </form>
+  
+          <form class="col" method="post" enctype="multipart/form-data" asp-controller="Upload" asp-action="UploadImage3">
+              <div class="col">
+                  <h3>Album 4</h3>
+                  @if (ViewBag.ImageUrlAlbum4 != null)
+                  {
+                      <div class="album-block">
+                          <img src="@ViewBag.ImageUrlAlbum4" alt="Uploaded Image for Album 4" />
+                      </div>
+                  }
+                  else if (ViewBag.MessageAlbum4 != null)
+                  {
+                      <p>@ViewBag.MessageAlbum4</p>
+                  }
+                  <input type="file" name="file" id="imageUpload4" accept="image/*" />
+                  <button type="submit">Cập nhật</button>
+              </div>
+          </form>
+
+          <form class="col" method="post" enctype="multipart/form-data" asp-controller="Upload" asp-action="UploadImage4">
+              <div class="col">
+                  <h3>Album 5</h3>
+                  @if (ViewBag.ImageUrlAlbum5 != null)
+                  {
+                      <div class="album-block">
+                          <img src="@ViewBag.ImageUrlAlbum5" alt="Uploaded Image for Album 5" />
+                      </div>
+                  }
+                  else if (ViewBag.MessageAlbum5 != null)
+                  {
+                      <p>@ViewBag.MessageAlbum5</p>
+                  }
+                  <input type="file" name="file" id="imageUpload5" accept="image/*" />
+                  <button type="submit">Cập nhật</button>
+              </div>
+          </form>
+
+          <form class="col" method="post" enctype="multipart/form-data" asp-controller="Upload" asp-action="UploadImage5">
+              <div class="col">
+                  <h3>Album 6</h3>
+                  @if (ViewBag.ImageUrlAlbum6 != null)
+                  {
+                      <div class="album-block">
+                          <img src="@ViewBag.ImageUrlAlbum6" alt="Uploaded Image for Album 6" />
+                      </div>
+                  }
+                  else if (ViewBag.MessageAlbum6 != null)
+                  {
+                      <p>@ViewBag.MessageAlbum6</p>
+                  }
+                  <input type="file" name="file" id="imageUpload6" accept="image/*" />
+                  <button type="submit">Cập nhật</button>
+              </div>
+          </form>
+
+          <form class="col" method="post" enctype="multipart/form-data" asp-controller="Upload" asp-action="UploadImage6">
+              <div class="col">
+                  <h3>Album 7</h3>
+                  @if (ViewBag.ImageUrlAlbum7 != null)
+                  {
+                      <div class="album-block">
+                          <img src="@ViewBag.ImageUrlAlbum7" alt="Uploaded Image for Album 7" />
+                      </div>
+                  }
+                  else if (ViewBag.MessageAlbum7 != null)
+                  {
+                      <p>@ViewBag.MessageAlbum7</p>
+                  }
+                  <input type="file" name="file" id="imageUpload7" accept="image/*" />
+                  <button type="submit">Cập nhật</button>
+              </div>
+          </form>
+
+          <form class="col" method="post" enctype="multipart/form-data" asp-controller="Upload" asp-action="UploadImage7">
+              <div class="col">
+                  <h3>Album 8</h3>
+                  @if (ViewBag.ImageUrlAlbum8 != null)
+                  {
+                      <div class="album-block">
+                          <img src="@ViewBag.ImageUrlAlbum8" alt="Uploaded Image for Album 8" />
+                      </div>
+                  }
+                  else if (ViewBag.MessageAlbum8 != null)
+                  {
+                      <p>@ViewBag.MessageAlbum8</p>
+                  }
+                  <input type="file" name="file" id="imageUpload8" accept="image/*" />
+                  <button type="submit">Cập nhật</button>
+              </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- Phần chỉnh sửa ảnh đại diện services -->
+       <div class="admin-services" id="upload_service">
+        <h2 class="admin-albums__title">Chỉnh sửa ảnh đại diện phần services</h2>
+        <div class="row row-cols-md-2 row-cols-sm-1 g-3">
+          <form class="col" method="post" enctype="multipart/form-data" asp-controller="Upload" asp-action="UploadImage8">
+              <div class="col">
+                <!-- Album 1 -->
+                @if(ViewBag.ImageUrlAlbum9 != null){
+                  <div class="album-block">
+                    <h3>Album ảnh cưới</h3>
+                    <img src="@ViewBag.ImageUrlAlbum9" alt="Uploaded Image for Album 9" />
+                    <input type="file" name="file" id="imageUpload9" accept="image/*" />
+                    <button type="submit">Cập nhật</button>
+                  </div>
+                }
+                else if(ViewBag.MessageAlbum9 != null){
+                  <p>@ViewBag.MessageAlbum9</p>
+                }
+              </div>
+          </form>
+
+          <form class="col" method="post" enctype="multipart/form-data" asp-controller="Upload" asp-action="UploadImage9">
+            <div class="col">
+                <!-- Album 2 -->
+              @if(ViewBag.ImageUrlAlbum10 != null){
+                <div class="album-block">
+                  <h3>Trang điểm cô dâu</h3>
+                  <img src="@ViewBag.ImageUrlAlbum10" alt="Uploaded Image for Album 10" />
+                  <input type="file" name="file" accept="image/*" />
+                  <button type="submit">Cập nhật</button>
+                </div>
+              } 
+              else if(ViewBag.MessageAlbum10 != null){
+                 <p>@ViewBag.MessageAlbum10</p>
+              }
+            </div>
+          </form>
+          
+
+          <form class="col" method="post" enctype="multipart/form-data" asp-controller="Upload" asp-action="UploadImage10">
+            <div class="col">
+                <!-- Album 3 -->
+              @if(ViewBag.ImageUrlAlbum11 != null){
+                <div class="album-block">
+                  <h3>Váy cưới cao cấp</h3>
+                  <img src="@ViewBag.ImageUrlAlbum11" alt="Uploaded Image for Album 11" />
+                  <input type="file" name="file" accept="image/*" />
+                  <button type="submit">Cập nhật</button>
+                </div>
+              } else if(ViewBag.MessageAlbum11 != null){
+                <p>@ViewBag.MessageAlbum11</p>
+              }
+            </div>
+          </form>
+        </div>
+       </div>
+
+       <!-- Phần chỉnh sửa ảnh trang introduce -->
+       <div class="admin-services" id="upload_introduce">
+        <h2 class="admin-albums__title">Chỉnh sửa ảnh trang Giới Thiệu</h2>
+        <div class="row row-cols-md-2 row-cols-sm-1 g-3">
+          <form class="col" method="post" enctype="multipart/form-data" asp-controller="Upload" asp-action="UploadImageIntroduce1">
+              <div class="col">
+                <!-- Album 1 -->
+                @if(ViewBag.imageUrlIntroduce1 != null){
+                  <div class="album-block">
+                    <h3>Hình Ảnh 1</h3>
+                    <img src="@ViewBag.imageUrlIntroduce1" alt="Uploaded Image for Album 9" />
+                    <input type="file" name="file" id="imageUploadImageIntroduce1" accept="image/*" />
+                    <button type="submit">Cập nhật</button>
+                  </div>
+                }
+                else if(ViewBag.MessageimageIntroduce1 != null){
+                  <p>@ViewBag.MessageimageIntroduce1</p>
+                }
+              </div>
+          </form>
+
+          <form class="col" method="post" enctype="multipart/form-data" asp-controller="Upload" asp-action="UploadImageIntroduce2">
+            <div class="col">
+                <!-- Album 2 -->
+              @if(ViewBag.imageUrlIntroduce2 != null){
+                <div class="album-block">
+                  <h3>Hình Ảnh 2</h3>
+                  <img src="@ViewBag.imageUrlIntroduce2" alt="Uploaded Image for Album 10" />
+                  <input type="file" name="file" id="imageUploadImageIntroduce2" accept="image/*" />
+                  <button type="submit">Cập nhật</button>
+                </div>
+              } 
+              else if(ViewBag.MessageimageIntroduce2 != null){
+                 <p>@ViewBag.MessageimageIntroduce2</p>
+              }
+            </div>
+          </form>
+
+          <form class="col" method="post" enctype="multipart/form-data" asp-controller="Upload" asp-action="UploadImageIntroduce3">
+            <div class="col">
+                <!-- Album 3 -->
+              @if(ViewBag.imageUrlIntroduce3 != null){
+                <div class="album-block">
+                  <h3>Hình Ảnh 3</h3>
+                  <img src="@ViewBag.imageUrlIntroduce3" alt="Uploaded Image for Album 11" />
+                  <input type="file" name="file" id="imageUploadImageIntroduce3" accept="image/*" />
+                  <button type="submit">Cập nhật</button>
+                </div>
+              } else if(ViewBag.MessageimageIntroduce3 != null){
+                <p>@ViewBag.MessageimageIntroduce3</p>
+              }
+            </div>
+          </form>
+
+          <form class="col" method="post" enctype="multipart/form-data" asp-controller="Upload" asp-action="UploadImageIntroduce4">
+            <div class="col">
+                <!-- Album 3 -->
+              @if(ViewBag.imageUrlIntroduce4 != null){
+                <div class="album-block">
+                  <h3>Hình Ảnh 4</h3>
+                  <img src="@ViewBag.imageUrlIntroduce4" alt="Uploaded Image for Album 11" />
+                  <input type="file" name="file" id="imageUploadImageIntroduce4" accept="image/*" />
+                  <button type="submit">Cập nhật</button>
+                </div>
+              } else if(ViewBag.MessageimageIntroduce4 != null){
+                <p>@ViewBag.MessageimageIntroduce4</p>
+              }
+            </div>
+          </form>
+        </div>
+       </div>
+
+       <!--  Phần chỉnh sửa ảnh trang phục cưới -->
+       <div class="admin-services" id="upload_Weddinggownpage">
+        <h2 class="admin-albums__title">Chỉnh sửa ảnh trang phục cưới</h2>
+        <div class="row row-cols-md-2 row-cols-sm-1 g-3">
+          <form class="col" method="post" enctype="multipart/form-data" asp-controller="Upload" asp-action="UploadImageWeddinggown1">
+              <div class="col">
+                <!-- Album 1 -->
+                @if(ViewBag.imageUrlWeddinggown1 != null){
+                  <div class="album-block">
+                    <h3>Hình Ảnh 1</h3>
+                    <img src="@ViewBag.imageUrlWeddinggown1" alt="Uploaded Image for Album 9" />
+                    <input type="file" name="file" id="imageUploadWeddinggown1" accept="image/*" />
+                    <button type="submit">Cập nhật</button>
+                  </div>
+                }
+                else if(ViewBag.MessageimageWeddinggown1 != null){
+                  <p>@ViewBag.MessageimageWeddinggown1</p>
+                }
+              </div>
+          </form>
+
+          <form class="col" method="post" enctype="multipart/form-data" asp-controller="Upload" asp-action="UploadImageWeddinggown2">
+            <div class="col">
+                <!-- Album 2 -->
+              @if(ViewBag.imageUrlWeddinggown2 != null){
+                <div class="album-block">
+                  <h3>Hình Ảnh 2</h3>
+                  <img src="@ViewBag.imageUrlWeddinggown2" alt="Uploaded Image for Album 10" />
+                  <input type="file" name="file" id="imageUploadWeddinggown2" accept="image/*" />
+                  <button type="submit">Cập nhật</button>
+                </div>
+              } 
+              else if(ViewBag.MessageimageWeddinggown2 != null){
+                 <p>@ViewBag.MessageimageWeddinggown2</p>
+              }
+            </div>
+          </form>
+
+          <form class="col" method="post" enctype="multipart/form-data" asp-controller="Upload" asp-action="UploadImageWeddinggown3">
+            <div class="col">
+                <!-- Album 3 -->
+              @if(ViewBag.imageUrlWeddinggown3 != null){
+                <div class="album-block">
+                  <h3>Hình Ảnh 3</h3>
+                  <img src="@ViewBag.imageUrlWeddinggown3" alt="Uploaded Image for Album 11" />
+                  <input type="file" name="file" id="imageUploadWeddinggown3" accept="image/*" />
+                  <button type="submit">Cập nhật</button>
+                </div>
+              } else if(ViewBag.MessageimageWeddinggown3 != null){
+                <p>@ViewBag.MessageimageWeddinggown3</p>
+              }
+            </div>
+          </form>
+
+          <form class="col" method="post" enctype="multipart/form-data" asp-controller="Upload" asp-action="UploadImageWeddinggown4">
+            <div class="col">
+                <!-- Album 3 -->
+              @if(ViewBag.imageUrlWeddinggown4 != null){
+                <div class="album-block">
+                  <h3>Hình Ảnh 4</h3>
+                  <img src="@ViewBag.imageUrlWeddinggown4" alt="Uploaded Image for Album 11" />
+                  <input type="file" name="file" id="imageUploadWeddinggown4" accept="image/*" />
+                  <button type="submit">Cập nhật</button>
+                </div>
+              } else if(ViewBag.MessageimageWeddinggown4 != null){
+                <p>@ViewBag.MessageimageWeddinggown4</p>
+              }
+            </div>
+          </form>
+        </div>
+       </div>
+
+       <!-- Phần chỉnh sửa trang điểm -->
+       <div class="admin-services" id="upload_Makeup">
+        <h2 class="admin-albums__title">Chỉnh sửa ảnh Trang Điểm</h2>
+        <div class="row row-cols-md-2 row-cols-sm-1 g-3">
+          <form class="col" method="post" enctype="multipart/form-data" asp-controller="Upload" asp-action="UploadImageMakeup1">
+              <div class="col">
+                <!-- Album 1 -->
+                @if(ViewBag.imageUrlMakeup1 != null){
+                  <div class="album-block">
+                    <h3>Hình Ảnh 1</h3>
+                    <img src="@ViewBag.imageUrlMakeup1" alt="Uploaded Image for Album 9" />
+                    <input type="file" name="file" id="imageUploadMakeup1" accept="image/*" />
+                    <button type="submit">Cập nhật</button>
+                  </div>
+                }
+                else if(ViewBag.MessageimageMakeup1 != null){
+                  <p>@ViewBag.MessageimageMakeup1</p>
+                }
+              </div>
+          </form>
+
+          <form class="col" method="post" enctype="multipart/form-data" asp-controller="Upload" asp-action="UploadImageMakeup2">
+            <div class="col">
+                <!-- Album 2 -->
+              @if(ViewBag.imageUrlMakeup2 != null){
+                <div class="album-block">
+                  <h3>Hình Ảnh 2</h3>
+                  <img src="@ViewBag.imageUrlMakeup2" alt="Uploaded Image for Album 10" />
+                  <input type="file" name="file" id="imageUploadMakeup2" accept="image/*" />
+                  <button type="submit">Cập nhật</button>
+                </div>
+              } 
+              else if(ViewBag.MessageimageMakeup2 != null){
+                 <p>@ViewBag.MessageimageMakeup2</p>
+              }
+            </div>
+          </form>
+
+          <form class="col" method="post" enctype="multipart/form-data" asp-controller="Upload" asp-action="UploadImageMakeup3">
+            <div class="col">
+                <!-- Album 3 -->
+              @if(ViewBag.imageUrlMakeup3 != null){
+                <div class="album-block">
+                  <h3>Hình Ảnh 3</h3>
+                  <img src="@ViewBag.imageUrlMakeup3" alt="Uploaded Image for Album 11" />
+                  <input type="file" name="file" id="imageUploadMakeup3" accept="image/*" />
+                  <button type="submit">Cập nhật</button>
+                </div>
+              } else if(ViewBag.MessageimageMakeup3 != null){
+                <p>@ViewBag.MessageimageMakeup3</p>
+              }
+            </div>
+          </form>
+
+          <form class="col" method="post" enctype="multipart/form-data" asp-controller="Upload" asp-action="UploadImageMakeup4">
+            <div class="col">
+                <!-- Album 3 -->
+              @if(ViewBag.imageUrlMakeup4 != null){
+                <div class="album-block">
+                  <h3>Hình Ảnh 4</h3>
+                  <img src="@ViewBag.imageUrlMakeup4" alt="Uploaded Image for Album 11" />
+                  <input type="file" name="file" id="imageUploadMakeup4" accept="image/*" />
+                  <button type="submit">Cập nhật</button>
+                </div>
+              } else if(ViewBag.MessageimageMakeup4 != null){
+                <p>@ViewBag.MessageimageMakeup4</p>
+              }
+            </div>
+          </form>
+
+          <form class="col" method="post" enctype="multipart/form-data" asp-controller="Upload" asp-action="UploadImageMakeup5">
+            <div class="col">
+                <!-- Album 3 -->
+              @if(ViewBag.imageUrlMakeup5 != null){
+                <div class="album-block">
+                  <h3>Hình Ảnh 4</h3>
+                  <img src="@ViewBag.imageUrlMakeup5" alt="Uploaded Image for Album 11" />
+                  <input type="file" name="file" id="imageUploadMakeup5" accept="image/*" />
+                  <button type="submit">Cập nhật</button>
+                </div>
+              } else if(ViewBag.MessageimageMakeup5 != null){
+                <p>@ViewBag.MessageimageMakeup5</p>
+              }
+            </div>
+          </form>
+
+          <form class="col" method="post" enctype="multipart/form-data" asp-controller="Upload" asp-action="UploadImageMakeup6">
+            <div class="col">
+                <!-- Album 3 -->
+              @if(ViewBag.imageUrlMakeup6 != null){
+                <div class="album-block">
+                  <h3>Hình Ảnh 4</h3>
+                  <img src="@ViewBag.imageUrlMakeup6" alt="Uploaded Image for Album 11" />
+                  <input type="file" name="file" id="imageUploadMakeup6" accept="image/*" />
+                  <button type="submit">Cập nhật</button>
+                </div>
+              } else if(ViewBag.MessageimageMakeup6 != null){
+                <p>@ViewBag.MessageimageMakeup6</p>
+              }
+            </div>
+          </form>
+
+          <form class="col" method="post" enctype="multipart/form-data" asp-controller="Upload" asp-action="UploadImageMakeup7">
+            <div class="col">
+                <!-- Album 3 -->
+              @if(ViewBag.imageUrlMakeup7 != null){
+                <div class="album-block">
+                  <h3>Hình Ảnh 4</h3>
+                  <img src="@ViewBag.imageUrlMakeup7" alt="Uploaded Image for Album 11" />
+                  <input type="file" name="file" id="imageUploadMakeup7" accept="image/*" />
+                  <button type="submit">Cập nhật</button>
+                </div>
+              } else if(ViewBag.MessageimageMakeup7 != null){
+                <p>@ViewBag.MessageimageMakeup7</p>
+              }
+            </div>
+          </form>
+
+          <form class="col" method="post" enctype="multipart/form-data" asp-controller="Upload" asp-action="UploadImageMakeup8">
+            <div class="col">
+                <!-- Album 3 -->
+              @if(ViewBag.imageUrlMakeup8 != null){
+                <div class="album-block">
+                  <h3>Hình Ảnh 4</h3>
+                  <img src="@ViewBag.imageUrlMakeup8" alt="Uploaded Image for Album 11" />
+                  <input type="file" name="file" id="imageUploadMakeup8" accept="image/*" />
+                  <button type="submit">Cập nhật</button>
+                </div>
+              } else if(ViewBag.MessageimageMakeup8 != null){
+                <p>@ViewBag.MessageimageMakeup8</p>
+              }
+            </div>
+          </form>
+        </div>
+       </div>
+    </div>
+    <script src="~/assets/js/admin.js"></script>
+  </body>
+</html>

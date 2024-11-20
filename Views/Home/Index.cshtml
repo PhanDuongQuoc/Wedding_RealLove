@@ -1,0 +1,421 @@
+﻿@model dynamic
+@{
+    ViewData["Title"] = "Home Page";
+}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Real Love</title>
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="~/assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="~/assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="~/assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="~/assets/favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="~/assets/favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Embed Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="~/assets/css/main.css" />
+
+    <!-- Script -->
+    <script src="~/assets/js/script.js"></script>
+  </head>
+  <body>
+    <header id="header">
+      @await Html.PartialAsync("_Header")
+    </header>
+
+    <main>
+      <div class="slideshow">
+        <div class="slides">
+          @if(ViewBag.ImageUrlSlider1 != null){
+               <img src="@ViewBag.ImageUrlSlider1" alt="Uploaded Image" />
+          }else if(ViewBag.Message != null){
+            <p>@ViewBag.Message</p>
+          }
+          @if(ViewBag.ImageUrlSlider2 != null){
+               <img src="@ViewBag.ImageUrlSlider2" alt="Uploaded Image" />
+          }else if(ViewBag.Message != null){
+            <p>@ViewBag.Message</p>
+          }
+          @if(ViewBag.ImageUrlSlider3 != null){
+               <img src="@ViewBag.ImageUrlSlider3" alt="Uploaded Image" />
+          }else if(ViewBag.Message != null){
+            <p>@ViewBag.Message</p>
+          }
+        </div>
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+
+        <div class="bubble-wrap">
+          <div class="bubble">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="bubble">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="bubble">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="bubble">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="bubble">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+          <div class="bubble">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section Album -->
+      <section class="section">
+        <div class="container max-width-100">
+          <h2 class="section__heading">Album ảnh cưới</h2>
+
+          <div class="album">
+            <div class="row row-cols-4 row-cols-lg-3 row-cols-md-2 g-2">
+                @if (ViewBag.ImageUrl != null)
+                { 
+                  <div class="col">
+                    <div class="album-box-img" data-album="album1">
+                      <a href="@Url.Action("showAlbum", "Album", new { albumName = "album1" })" class="album-box">
+                        <img class="album-img" src="@ViewBag.ImageUrl" alt="Uploaded Image" />
+                        <div class="album-text-box">
+                          <h2 class="album-text-inner">Album ảnh cưới</h2>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                } else if (ViewBag.Message!= null)
+                {
+                    <p>@ViewBag.Message</p>
+                }
+
+                @if (ViewBag.ImageUrlAlbum2 != null)
+                { 
+                  <div class="col">
+                    <div class="album-box-img" data-album="album2">
+                      <a href="@Url.Action("showAlbum", "Album", new { albumName = "album2" })" class="album-box">
+                        <img class="album-img" src="@ViewBag.ImageUrlAlbum2" alt="Uploaded Image" />
+                        <div class="album-text-box">
+                          <h2 class="album-text-inner">Album ảnh cưới</h2>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                } else if (ViewBag.Message!= null)
+                  {
+                      <p>@ViewBag.Message</p>
+                  }
+              
+              @if (ViewBag.ImageUrlAlbum3 != null)
+                { 
+                  <div class="col">
+                    <div class="album-box-img" data-album="album3">
+                      <a href="@Url.Action("showAlbum", "Album", new { albumName = "album3" })" class="album-box">
+                        <img class="album-img" src="@ViewBag.ImageUrlAlbum3" alt="Uploaded Image" />
+                        <div class="album-text-box">
+                          <h2 class="album-text-inner">Album ảnh cưới</h2>
+                        </div>
+                      </a>  
+                    </div>
+                  </div>
+                } else if (ViewBag.Message!= null)
+                {
+                    <p>@ViewBag.Message</p>
+                }
+
+              @if (ViewBag.ImageUrlAlbum4 != null)
+                { 
+                  <div class="col">
+                    <div class="album-box-img" data-album="album4" >
+                      <a href="@Url.Action("showAlbum", "Album", new { albumName = "album4" })" class="album-box">
+                        <img class="album-img" src="@ViewBag.ImageUrlAlbum4" alt="Uploaded Image" />
+                        <div class="album-text-box">
+                          <h2 class="album-text-inner">Album ảnh cưới</h2>
+                        </div>
+                      </a>  
+                    </div>
+                  </div>
+                } else if (ViewBag.Message!= null)
+                {
+                    <p>@ViewBag.Message</p>
+                }
+
+              @if (ViewBag.ImageUrlAlbum5 != null)
+                { 
+                  <div class="col">
+                    <div class="album-box-img" data-album="album5">
+                      <a href="@Url.Action("showAlbum", "Album", new { albumName = "album5" })" class="album-box">
+                        <img class="album-img" src="@ViewBag.ImageUrlAlbum5" alt="Uploaded Image" />
+                        <div class="album-text-box">
+                          <h2 class="album-text-inner">Album ảnh cưới</h2>
+                        </div>
+                      </a>  
+                    </div>
+                  </div>
+                } else if (ViewBag.Message!= null)
+                {
+                    <p>@ViewBag.Message</p>
+                }
+
+              @if (ViewBag.ImageUrlAlbum6 != null)
+                { 
+                  <div class="col">
+                    <div class="album-box-img" data-album="album6">
+                      <a href="@Url.Action("showAlbum", "Album", new { albumName = "album6" })" class="album-box">
+                        <img class="album-img" src="@ViewBag.ImageUrlAlbum6" alt="Uploaded Image" />
+                        <div class="album-text-box">
+                          <h2 class="album-text-inner">Album ảnh cưới</h2>
+                        </div>
+                      </a>  
+                    </div>
+                  </div>
+                } else if (ViewBag.Message!= null)
+                {
+                    <p>@ViewBag.Message</p>
+                }
+
+              @if (ViewBag.ImageUrlAlbum7 != null)
+                { 
+                  <div class="col">
+                    <div class="album-box-img" data-album="album7">
+                      <a href="@Url.Action("showAlbum", "Album", new { albumName = "album7" })" class="album-box">
+                        <img class="album-img" src="@ViewBag.ImageUrlAlbum7" alt="Uploaded Image" />
+                        <div class="album-text-box">
+                          <h2 class="album-text-inner">Album ảnh cưới</h2>
+                        </div>
+                      </a>  
+                    </div>
+                  </div>
+                } else if (ViewBag.Message!= null)
+                {
+                    <p>@ViewBag.Message</p>
+                }
+
+              @if (ViewBag.ImageUrlAlbum8 != null)
+                { 
+                  <div class="col">
+                    <div class="album-box-img" data-album="album8">
+                      <a href="@Url.Action("showAlbum", "Album", new { albumName = "album8" })" class="album-box">
+                        <img class="album-img" src="@ViewBag.ImageUrlAlbum8" alt="Uploaded Image" />
+                        <div class="album-text-box">
+                          <h2 class="album-text-inner">Album ảnh cưới</h2>
+                        </div>
+                      </a>  
+                    </div>
+                  </div>
+                } else if (ViewBag.Message!= null)
+                {
+                    <p>@ViewBag.Message</p>
+                }
+            </div>
+          </div>
+        </div>
+      </section>
+        <!-- Section Services -->
+        <section class="section">
+          <div class="container max-width-100">
+            <div class="section__top">
+              <h2 class="section__heading">
+                Tại Real Love, bạn hoàn toàn yên tâm với các dịch vụ cưới
+              </h2>
+              <p class="section__desc">
+                Tại REAL LOVE, bạn hoàn toàn yên tâm với những dịch vụ cưới trọn gói, từ trang điểm cô dâu chuyên nghiệp giúp bạn rạng rỡ tự tin, đến album cưới đẹp được thiết kế tinh tế, lưu giữ trọn vẹn những khoảnh khắc đáng nhớ. Bên cạnh đó, chúng tôi còn cung cấp váy cưới cao cấp với thiết kế sang trọng, giúp bạn thật lộng lẫy trong ngày trọng đại của mình.
+              </p>
+            </div>
+
+            <div class="container max-width-100">
+              <!-- Services -->
+              <div class="services">
+                <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 g-3">
+
+                  <div class="col">
+                    @if(ViewBag.ImageUrlAlbum9 != null){
+                    <div class="album-box-img" data-album="album9" onclick="redirectToAlbum(this)">
+                      <a asp-controller="Album" class="album-box">
+                        <img class="album-img" src="@ViewBag.ImageUrlAlbum9" alt="Uploaded Image" />
+                        <div class="album-text-box">
+                          <h2 class="album-text-inner">Album ảnh cưới</h2>
+                        </div>
+                      </a>
+                    </div>
+                    }else if(ViewBag.Message!= null)
+                    {
+                        <p>@ViewBag.Message</p>
+                    }
+                  </div>
+    
+                  <div class="col">
+                    @if(ViewBag.ImageUrlAlbum10 != null){
+                      <div class="album-box-img" data-album="album10" onclick="redirectToAlbum(this)">
+                        <a asp-controller="Makeup" class="album-box">
+                          <img class="album-img" src="@ViewBag.ImageUrlAlbum10" alt="Uploaded Image" />
+                          <div class="album-text-box">
+                            <h2 class="album-text-inner">Trang điểm cô dâu</h2>
+                          </div>
+                        </a>
+                      </div>
+                    }else if(ViewBag.Message!= null)
+                    {
+                      <p>@ViewBag.Message</p>
+                    }
+                  </div>
+    
+                  <div class="col">
+                    @if(ViewBag.ImageUrlAlbum11 != null){
+                      <div class="album-box-img" data-album="album11" onclick="redirectToAlbum(this)">
+                        <a asp-controller="Weddinggownpage" class="album-box">
+                          <img class="album-img" src="@ViewBag.ImageUrlAlbum11" alt="Uploaded Image" />
+                          <div class="album-text-box">
+                            <h2 class="album-text-inner">Váy cưới cao cấp </h2>
+                          </div>
+                        </a>
+                      </div>
+                    }else if(ViewBag.Message!= null)
+                    {
+                      <p>@ViewBag.Message</p>
+                     }
+                  </div>
+  
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section Video -->
+        <section class="section">
+            <div class="container max-width-100">
+              <div class="section__top">
+                <h2 class="section__heading">
+                  Phim cưới
+                </h2>
+                <p class="section__desc">
+                  Phim cưới tại Real Love là những video ngắn độc đáo, nơi cô dâu chú rể trở thành diễn viên chính trong câu chuyện tình yêu của mình. Với các góc quay hiện đại và sáng tạo, sẽ ghi lại những khoảnh khắc tự nhiên tạo nên tác phẩm nghệ thuật riêng biệt và đáng nhớ.
+                </p>
+              </div>
+              <!-- Video gallery -->
+              <div class="video-gallery">
+                <div class="video-block" data-video="https://www.youtube.com/embed/g1Mi-nJB7us?si=d3g5Ut4vhCkyT_z2">
+                  <img class="thumbnail-video" src="https://img.youtube.com/vi/g1Mi-nJB7us/hqdefault.jpg" alt="Thumbnail 1" />
+                  <img src="~/assets/icons/ytb-btn.png" alt="" class="play-youtube-btn">
+                </div>
+                <div class="video-block" data-video="https://www.youtube.com/embed/PZqjbD6WUx8?si=Av6RQX2ipa6pSF4b">
+                  <img class="thumbnail-video" src="https://img.youtube.com/vi/PZqjbD6WUx8/hqdefault.jpg" alt="Thumbnail 2" />
+                  <img src="~/assets/icons/ytb-btn.png" alt="" class="play-youtube-btn">
+                </div>
+                <div class="video-block" data-video="https://www.youtube.com/embed/g1Mi-nJB7us?si=vOKg7e_5ZUdXcaeF">
+                  <img class="thumbnail-video" src="https://img.youtube.com/vi/CRBtjYp8IAE/hqdefault.jpg" alt="Thumbnail 3" />
+                  <img src="~/assets/icons/ytb-btn.png" alt="" class="play-youtube-btn">
+                </div>
+                <div class="video-block" data-video="https://www.youtube.com/embed/-991xmNu9qk?si=Z2hCCeGX5_q7ibTL">
+                  <img class="thumbnail-video" src="https://img.youtube.com/vi/-991xmNu9qk/hqdefault.jpg" alt="Thumbnail 4" />
+                  <img src="~/assets/icons/ytb-btn.png" alt="" class="play-youtube-btn">
+                </div>
+              </div>
+
+              <!-- Modal -->
+              <div class="video-modal" id="videoModal">
+                <div class="video-modal-content">
+                  <iframe id="modal-video" width="560" height="315" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+        </section>
+
+        <!-- Section Map -->
+        <section class="section">
+          <div class="map">
+              <div class="section__top">
+                <h2 class="section__heading">
+                  REAL LOVE MAPS
+                </h2>
+                <p class="section__desc">
+                  P2 -49 Đường 3/2 KĐT Phú Cường, Rạch Giá, Kiên Giang
+                </p>
+              </div>
+
+              <div class="map__iframe-wrap">
+                <iframe 
+                  class="map__iframe"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.5108399898772!2d105.09253487479323!3d9.97459399012953!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31a0b5001bb3a267%3A0x3a4d0fc7a55b04b8!2sREAL%20LOVE!5e0!3m2!1svi!2sus!4v1731328614176!5m2!1svi!2sus" 
+                  width="600" 
+                  height="450" 
+                  style="border:0;"
+                  allowfullscreen="" 
+                  loading="lazy" 
+                  referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+              </div>
+          </div>
+        </section>
+      </div>
+    </main>
+     <footer class="footer" id="footer">
+      @await Html.PartialAsync("_Footer")
+    </footer>
+    @await Html.PartialAsync("play-music-btn")
+    @await Html.PartialAsync("contact-buttons")
+    <script src="~/assets/js/main.js"></script>
+    <script src="~/assets/js/detail-album.js"></script>
+    <script src="~/assets/js/album-page.js"></script>
+  </body>
+</html>

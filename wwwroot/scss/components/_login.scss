@@ -1,0 +1,114 @@
+@use "../abstracts";
+.container-wrap-login{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  background-image:url('/wwwroot/assets/img/login-img/bgloginn.jpg');
+  @include abstracts.breakpoint(xxl){
+    width: 100%;
+  }
+  @include abstracts.breakpoint(xl){
+    width: 100%;
+  }
+  @include abstracts.breakpoint(lg){
+    width: 100%;
+  }
+  @include abstracts.breakpoint(md){
+    width: 100%;
+  }
+  @include abstracts.breakpoint(sm){
+    width: 100%;
+  }
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+    width: 100%;
+  }
+  
+  .login-box {
+    background-color: #cdc6c6b8;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(221, 219, 216, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+    border: 1px solid #b38b6d;
+  
+    .logo {
+      width: 300px;
+      font-size: 3rem;
+      font-family: 'Brush Script MT', cursive;
+      color: #e08a48;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  
+    .login-form {
+      display: flex;
+      flex-direction: column;
+  
+      .input-group {
+        margin-bottom: 15px;
+        text-align: left;
+  
+        label {
+          display: block;
+          font-size: 1.2rem;
+          color: #cb6a1f;
+          margin-bottom: 5px;
+        }
+  
+        input {
+          width: 100%;
+          padding: 10px;
+          font-size: 1rem;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+        }
+      }
+  
+      .login-btn {
+        padding: 10px;
+        font-size: 1.2rem;
+        background-color: #e08a48;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        margin: auto;
+  
+        &:hover {
+          background-color: #a07a5b;
+        }
+      }
+  
+      .links {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        font-size: 0.9rem;
+  
+        a {
+          color: #cb6a1f;
+          text-decoration: none;
+          font-size: 1rem;
+  
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
+

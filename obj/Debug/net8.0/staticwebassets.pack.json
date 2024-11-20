@@ -1,0 +1,1341 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\WeddingWebsiteProject.bundle.scp.css",
+      "PackagePath": "staticwebassets\\WeddingWebsiteProject.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\css\\main.css",
+      "PackagePath": "staticwebassets\\assets\\css\\main.css"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\css\\main.css.map",
+      "PackagePath": "staticwebassets\\assets\\css\\main.css.map"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\favicon\\android-chrome-192x192.png",
+      "PackagePath": "staticwebassets\\assets\\favicon\\android-chrome-192x192.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\favicon\\android-chrome-512x512.png",
+      "PackagePath": "staticwebassets\\assets\\favicon\\android-chrome-512x512.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\favicon\\apple-touch-icon.png",
+      "PackagePath": "staticwebassets\\assets\\favicon\\apple-touch-icon.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\favicon\\browserconfig.xml",
+      "PackagePath": "staticwebassets\\assets\\favicon\\browserconfig.xml"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\favicon\\favicon-16x16.png",
+      "PackagePath": "staticwebassets\\assets\\favicon\\favicon-16x16.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\favicon\\favicon-32x32.png",
+      "PackagePath": "staticwebassets\\assets\\favicon\\favicon-32x32.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\favicon\\favicon.ico",
+      "PackagePath": "staticwebassets\\assets\\favicon\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\favicon\\mstile-150x150.png",
+      "PackagePath": "staticwebassets\\assets\\favicon\\mstile-150x150.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\favicon\\safari-pinned-tab.svg",
+      "PackagePath": "staticwebassets\\assets\\favicon\\safari-pinned-tab.svg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\favicon\\site.webmanifest",
+      "PackagePath": "staticwebassets\\assets\\favicon\\site.webmanifest"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\icons\\back-icon.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\back-icon.svg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\icons\\dark-mode-icon.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\dark-mode-icon.svg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\icons\\envelope-solid.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\envelope-solid.svg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\icons\\facebook-icon.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\facebook-icon.svg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\icons\\file-invoice-solid.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\file-invoice-solid.svg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\icons\\gauge-solid.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\gauge-solid.svg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\icons\\gear-solid.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\gear-solid.svg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\icons\\hotline-icon.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\hotline-icon.svg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\icons\\image-solid.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\image-solid.svg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\icons\\magnifying-glass-solid.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\magnifying-glass-solid.svg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\icons\\menu-icon.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\menu-icon.svg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\icons\\message-icon.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\message-icon.svg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\icons\\newspaper-solid.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\newspaper-solid.svg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\icons\\pause-icon.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\pause-icon.svg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\icons\\phone-icon.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\phone-icon.svg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\icons\\play-icon.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\play-icon.svg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\icons\\right-from-bracket-solid.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\right-from-bracket-solid.svg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\icons\\tiktok-icon.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\tiktok-icon.svg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\icons\\user-solid.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\user-solid.svg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\icons\\view-icon.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\view-icon.svg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\icons\\web-awesome-brands-solid.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\web-awesome-brands-solid.svg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\icons\\ytb-btn.png",
+      "PackagePath": "staticwebassets\\assets\\icons\\ytb-btn.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\icons\\zalo-icon.svg",
+      "PackagePath": "staticwebassets\\assets\\icons\\zalo-icon.svg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\img\\album-1\\img-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\album-1\\img-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\img\\album-1\\img-10.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\album-1\\img-10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\img\\album-1\\img-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\album-1\\img-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\img\\album-1\\img-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\album-1\\img-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\img\\album-1\\img-4.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\album-1\\img-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\img\\album-1\\img-5.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\album-1\\img-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\img\\album-1\\img-6.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\album-1\\img-6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\img\\album-1\\img-7.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\album-1\\img-7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\img\\album-1\\img-8.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\album-1\\img-8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\img\\album-1\\img-9.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\album-1\\img-9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\img\\album-2\\img-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\album-2\\img-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\img\\album-2\\img-10.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\album-2\\img-10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\img\\album-2\\img-11.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\album-2\\img-11.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\img\\album-2\\img-12.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\album-2\\img-12.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\img\\album-2\\img-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\album-2\\img-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\img\\album-2\\img-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\album-2\\img-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\img\\album-2\\img-4.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\album-2\\img-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\img\\album-2\\img-5.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\album-2\\img-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\img\\album-2\\img-6.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\album-2\\img-6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\img\\album-2\\img-7.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\album-2\\img-7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\img\\album-2\\img-8.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\album-2\\img-8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\img\\album-2\\img-9.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\album-2\\img-9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\img\\album-3\\img-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\album-3\\img-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\img\\album-3\\img-10.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\album-3\\img-10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\img\\album-3\\img-11.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\album-3\\img-11.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\img\\album-3\\img-12.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\album-3\\img-12.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\img\\album-3\\img-13.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\album-3\\img-13.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\img\\album-3\\img-14.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\album-3\\img-14.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\img\\album-3\\img-15.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\album-3\\img-15.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\img\\album-3\\img-16.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\album-3\\img-16.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\img\\album-3\\img-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\album-3\\img-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\img\\album-3\\img-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\album-3\\img-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\img\\album-3\\img-4.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\album-3\\img-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\img\\album-3\\img-5.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\album-3\\img-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\img\\album-3\\img-6.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\album-3\\img-6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\img\\album-3\\img-7.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\album-3\\img-7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\img\\album-3\\img-8.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\album-3\\img-8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\img\\album-3\\img-9.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\album-3\\img-9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\img\\album-4\\img-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\album-4\\img-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\img\\album-4\\img-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\album-4\\img-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\img\\album-4\\img-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\album-4\\img-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\img\\album-4\\img-4.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\album-4\\img-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\img\\album-4\\img-5.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\album-4\\img-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\img\\album-4\\img-6.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\album-4\\img-6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\img\\album-4\\img-7.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\album-4\\img-7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\img\\album-4\\img-8.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\album-4\\img-8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\img\\album-img\\img-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\album-img\\img-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\img\\album-img\\img-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\album-img\\img-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\img\\album-img\\img-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\album-img\\img-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\img\\album-img\\img-4.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\album-img\\img-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\img\\album-img\\img-5.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\album-img\\img-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\img\\album-img\\img-6.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\album-img\\img-6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\img\\album-img\\img-7.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\album-img\\img-7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\img\\album-img\\img-8.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\album-img\\img-8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\img\\flip-img\\flip-img-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\flip-img\\flip-img-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\img\\flip-img\\flip-img-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\flip-img\\flip-img-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\img\\flip-img\\flip-img-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\flip-img\\flip-img-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\img\\flip-img\\flip-img-4.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\flip-img\\flip-img-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\img\\flip-img\\flip-img-5.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\flip-img\\flip-img-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\img\\flip-img\\flip-img-6.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\flip-img\\flip-img-6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\img\\introduce-img\\BGRL.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\introduce-img\\BGRL.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\img\\introduce-img\\PTA.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\introduce-img\\PTA.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\img\\introduce-img\\PTB.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\introduce-img\\PTB.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\img\\introduce-img\\PTC.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\introduce-img\\PTC.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\img\\introduce-img\\PTD.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\introduce-img\\PTD.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\img\\login-img\\bgloginn.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\login-img\\bgloginn.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\img\\logo.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\logo.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\img\\slideshow-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\slideshow-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\img\\slideshow-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\slideshow-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\img\\slideshow-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\slideshow-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\js\\admin.js",
+      "PackagePath": "staticwebassets\\assets\\js\\admin.js"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\js\\album-page.js",
+      "PackagePath": "staticwebassets\\assets\\js\\album-page.js"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\js\\dashboard.js",
+      "PackagePath": "staticwebassets\\assets\\js\\dashboard.js"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\js\\detail-album.js",
+      "PackagePath": "staticwebassets\\assets\\js\\detail-album.js"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\js\\introduce.js",
+      "PackagePath": "staticwebassets\\assets\\js\\introduce.js"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\js\\main.js",
+      "PackagePath": "staticwebassets\\assets\\js\\main.js"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\js\\script.js",
+      "PackagePath": "staticwebassets\\assets\\js\\script.js"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\song\\song-1.mp3",
+      "PackagePath": "staticwebassets\\assets\\song\\song-1.mp3"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\song\\song-2.mp3",
+      "PackagePath": "staticwebassets\\assets\\song\\song-2.mp3"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\assets\\video\\video-demo.mp4",
+      "PackagePath": "staticwebassets\\assets\\video\\video-demo.mp4"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\package.json",
+      "PackagePath": "staticwebassets\\package.json"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\scss\\abstracts\\_index.scss",
+      "PackagePath": "staticwebassets\\scss\\abstracts\\_index.scss"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\scss\\abstracts\\_mixin.scss",
+      "PackagePath": "staticwebassets\\scss\\abstracts\\_mixin.scss"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\scss\\base\\_base.scss",
+      "PackagePath": "staticwebassets\\scss\\base\\_base.scss"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\scss\\base\\_grid.scss",
+      "PackagePath": "staticwebassets\\scss\\base\\_grid.scss"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\scss\\base\\_index.scss",
+      "PackagePath": "staticwebassets\\scss\\base\\_index.scss"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\scss\\base\\_reset.scss",
+      "PackagePath": "staticwebassets\\scss\\base\\_reset.scss"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\scss\\base\\_utils.scss",
+      "PackagePath": "staticwebassets\\scss\\base\\_utils.scss"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\scss\\components\\_admin.scss",
+      "PackagePath": "staticwebassets\\scss\\components\\_admin.scss"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\scss\\components\\_album.scss",
+      "PackagePath": "staticwebassets\\scss\\components\\_album.scss"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\scss\\components\\_bubble.scss",
+      "PackagePath": "staticwebassets\\scss\\components\\_bubble.scss"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\scss\\components\\_connect-btns.scss",
+      "PackagePath": "staticwebassets\\scss\\components\\_connect-btns.scss"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\scss\\components\\_connection.scss",
+      "PackagePath": "staticwebassets\\scss\\components\\_connection.scss"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\scss\\components\\_dashboard.scss",
+      "PackagePath": "staticwebassets\\scss\\components\\_dashboard.scss"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\scss\\components\\_detail-img-album.scss",
+      "PackagePath": "staticwebassets\\scss\\components\\_detail-img-album.scss"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\scss\\components\\_dropdown.scss",
+      "PackagePath": "staticwebassets\\scss\\components\\_dropdown.scss"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\scss\\components\\_flip-card.scss",
+      "PackagePath": "staticwebassets\\scss\\components\\_flip-card.scss"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\scss\\components\\_index.scss",
+      "PackagePath": "staticwebassets\\scss\\components\\_index.scss"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\scss\\components\\_information-admin.scss",
+      "PackagePath": "staticwebassets\\scss\\components\\_information-admin.scss"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\scss\\components\\_instruction.scss",
+      "PackagePath": "staticwebassets\\scss\\components\\_instruction.scss"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\scss\\components\\_introduce.scss",
+      "PackagePath": "staticwebassets\\scss\\components\\_introduce.scss"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\scss\\components\\_loader.scss",
+      "PackagePath": "staticwebassets\\scss\\components\\_loader.scss"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\scss\\components\\_login-btn.scss",
+      "PackagePath": "staticwebassets\\scss\\components\\_login-btn.scss"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\scss\\components\\_login.scss",
+      "PackagePath": "staticwebassets\\scss\\components\\_login.scss"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\scss\\components\\_logo.scss",
+      "PackagePath": "staticwebassets\\scss\\components\\_logo.scss"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\scss\\components\\_map.scss",
+      "PackagePath": "staticwebassets\\scss\\components\\_map.scss"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\scss\\components\\_play-music.scss",
+      "PackagePath": "staticwebassets\\scss\\components\\_play-music.scss"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\scss\\components\\_setting_dashboard.scss",
+      "PackagePath": "staticwebassets\\scss\\components\\_setting_dashboard.scss"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\scss\\components\\_slideshow.scss",
+      "PackagePath": "staticwebassets\\scss\\components\\_slideshow.scss"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\scss\\components\\_switch-btn.scss",
+      "PackagePath": "staticwebassets\\scss\\components\\_switch-btn.scss"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\scss\\components\\_video-blocks.scss",
+      "PackagePath": "staticwebassets\\scss\\components\\_video-blocks.scss"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\scss\\components\\_view.scss",
+      "PackagePath": "staticwebassets\\scss\\components\\_view.scss"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\scss\\components\\_website_setup.scss",
+      "PackagePath": "staticwebassets\\scss\\components\\_website_setup.scss"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\scss\\layout\\_footer.scss",
+      "PackagePath": "staticwebassets\\scss\\layout\\_footer.scss"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\scss\\layout\\_header.scss",
+      "PackagePath": "staticwebassets\\scss\\layout\\_header.scss"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\scss\\layout\\_index.scss",
+      "PackagePath": "staticwebassets\\scss\\layout\\_index.scss"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\scss\\main.scss",
+      "PackagePath": "staticwebassets\\scss\\main.scss"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\scss\\theme\\_dark.scss",
+      "PackagePath": "staticwebassets\\scss\\theme\\_dark.scss"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\scss\\theme\\_index.scss",
+      "PackagePath": "staticwebassets\\scss\\theme\\_index.scss"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\scss\\theme\\_light.scss",
+      "PackagePath": "staticwebassets\\scss\\theme\\_light.scss"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imageData.json",
+      "PackagePath": "staticwebassets\\uploads\\imageData.json"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imageData1.json",
+      "PackagePath": "staticwebassets\\uploads\\imageData1.json"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imageData10.json",
+      "PackagePath": "staticwebassets\\uploads\\imageData10.json"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imageData2.json",
+      "PackagePath": "staticwebassets\\uploads\\imageData2.json"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imageData3.json",
+      "PackagePath": "staticwebassets\\uploads\\imageData3.json"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imageData4.json",
+      "PackagePath": "staticwebassets\\uploads\\imageData4.json"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imageData5.json",
+      "PackagePath": "staticwebassets\\uploads\\imageData5.json"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imageData6.json",
+      "PackagePath": "staticwebassets\\uploads\\imageData6.json"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imageData7.json",
+      "PackagePath": "staticwebassets\\uploads\\imageData7.json"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imageData8.json",
+      "PackagePath": "staticwebassets\\uploads\\imageData8.json"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imageData9.json",
+      "PackagePath": "staticwebassets\\uploads\\imageData9.json"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imageDataIntroduce1.json",
+      "PackagePath": "staticwebassets\\uploads\\imageDataIntroduce1.json"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imageDataIntroduce2.json",
+      "PackagePath": "staticwebassets\\uploads\\imageDataIntroduce2.json"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imageDataIntroduce3.json",
+      "PackagePath": "staticwebassets\\uploads\\imageDataIntroduce3.json"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imageDataIntroduce4.json",
+      "PackagePath": "staticwebassets\\uploads\\imageDataIntroduce4.json"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imageDataMakeup1.json",
+      "PackagePath": "staticwebassets\\uploads\\imageDataMakeup1.json"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imageDataMakeup2.json",
+      "PackagePath": "staticwebassets\\uploads\\imageDataMakeup2.json"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imageDataMakeup3.json",
+      "PackagePath": "staticwebassets\\uploads\\imageDataMakeup3.json"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imageDataMakeup4.json",
+      "PackagePath": "staticwebassets\\uploads\\imageDataMakeup4.json"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imageDataMakeup5.json",
+      "PackagePath": "staticwebassets\\uploads\\imageDataMakeup5.json"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imageDataMakeup6.json",
+      "PackagePath": "staticwebassets\\uploads\\imageDataMakeup6.json"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imageDataMakeup7.json",
+      "PackagePath": "staticwebassets\\uploads\\imageDataMakeup7.json"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imageDataMakeup8.json",
+      "PackagePath": "staticwebassets\\uploads\\imageDataMakeup8.json"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imageDataSlider1.json",
+      "PackagePath": "staticwebassets\\uploads\\imageDataSlider1.json"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imageDataSlider2.json",
+      "PackagePath": "staticwebassets\\uploads\\imageDataSlider2.json"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imageDataSlider3.json",
+      "PackagePath": "staticwebassets\\uploads\\imageDataSlider3.json"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imageDataWeddinggown1.json",
+      "PackagePath": "staticwebassets\\uploads\\imageDataWeddinggown1.json"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imageDataWeddinggown2.json",
+      "PackagePath": "staticwebassets\\uploads\\imageDataWeddinggown2.json"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imageDataWeddinggown3.json",
+      "PackagePath": "staticwebassets\\uploads\\imageDataWeddinggown3.json"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imageDataWeddinggown4.json",
+      "PackagePath": "staticwebassets\\uploads\\imageDataWeddinggown4.json"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imageUploadImage10\\img-8.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imageUploadImage10\\img-8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imageUploadImage1\\img-2.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imageUploadImage1\\img-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imageUploadImage2\\img-1.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imageUploadImage2\\img-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imageUploadImage3\\img-1.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imageUploadImage3\\img-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imageUploadImage4\\img-4.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imageUploadImage4\\img-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imageUploadImage5\\img-6.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imageUploadImage5\\img-6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imageUploadImage6\\img-5.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imageUploadImage6\\img-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imageUploadImage7\\img-8.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imageUploadImage7\\img-8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imageUploadImage8\\img-7.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imageUploadImage8\\img-7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imageUploadImage9\\img-4.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imageUploadImage9\\img-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imageUploadImageIntroduce1\\img-11.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imageUploadImageIntroduce1\\img-11.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imageUploadImageIntroduce1\\img-6.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imageUploadImageIntroduce1\\img-6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imageUploadImageIntroduce2\\img-6.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imageUploadImageIntroduce2\\img-6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imageUploadImageIntroduce2\\img-7.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imageUploadImageIntroduce2\\img-7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imageUploadImageIntroduce3\\img-5.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imageUploadImageIntroduce3\\img-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imageUploadImageIntroduce3\\img-9.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imageUploadImageIntroduce3\\img-9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imageUploadImageIntroduce4\\img-2.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imageUploadImageIntroduce4\\img-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imageUploadImageIntroduce4\\img-6.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imageUploadImageIntroduce4\\img-6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imageUploadImageMakeup1\\img-1.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imageUploadImageMakeup1\\img-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imageUploadImageMakeup2\\img-3.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imageUploadImageMakeup2\\img-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imageUploadImageMakeup3\\img-6.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imageUploadImageMakeup3\\img-6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imageUploadImageMakeup3\\img-8.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imageUploadImageMakeup3\\img-8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imageUploadImageMakeup4\\img-3.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imageUploadImageMakeup4\\img-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imageUploadImageMakeup5\\img-6.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imageUploadImageMakeup5\\img-6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imageUploadImageMakeup6\\img-3.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imageUploadImageMakeup6\\img-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imageUploadImageMakeup7\\img-5.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imageUploadImageMakeup7\\img-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imageUploadImageMakeup8\\img-7.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imageUploadImageMakeup8\\img-7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imageUploadImageWeddinggown1\\img-1.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imageUploadImageWeddinggown1\\img-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imageUploadImageWeddinggown2\\img-5.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imageUploadImageWeddinggown2\\img-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imageUploadImageWeddinggown3\\img-6.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imageUploadImageWeddinggown3\\img-6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imageUploadImageWeddinggown4\\img-9.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imageUploadImageWeddinggown4\\img-9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imageUploadImage\\img-3.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imageUploadImage\\img-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imageUploadSlider1\\slideshow-1.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imageUploadSlider1\\slideshow-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imageUploadSlider2\\slideshow-2.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imageUploadSlider2\\slideshow-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imageUploadSlider3\\slideshow-3.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imageUploadSlider3\\slideshow-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imagesAlbum1\\Album1.json",
+      "PackagePath": "staticwebassets\\uploads\\imagesAlbum1\\Album1.json"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imagesAlbum1\\img-1.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imagesAlbum1\\img-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imagesAlbum1\\img-10.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imagesAlbum1\\img-10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imagesAlbum1\\img-11.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imagesAlbum1\\img-11.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imagesAlbum1\\img-12.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imagesAlbum1\\img-12.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imagesAlbum1\\img-2.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imagesAlbum1\\img-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imagesAlbum1\\img-3.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imagesAlbum1\\img-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imagesAlbum1\\img-4.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imagesAlbum1\\img-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imagesAlbum1\\img-5.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imagesAlbum1\\img-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imagesAlbum1\\img-6.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imagesAlbum1\\img-6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imagesAlbum1\\img-7.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imagesAlbum1\\img-7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imagesAlbum1\\img-8.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imagesAlbum1\\img-8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imagesAlbum1\\img-9.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imagesAlbum1\\img-9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imagesAlbum2\\Album2.json",
+      "PackagePath": "staticwebassets\\uploads\\imagesAlbum2\\Album2.json"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imagesAlbum2\\img-1.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imagesAlbum2\\img-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imagesAlbum2\\img-10.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imagesAlbum2\\img-10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imagesAlbum2\\img-11.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imagesAlbum2\\img-11.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imagesAlbum2\\img-12.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imagesAlbum2\\img-12.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imagesAlbum2\\img-13.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imagesAlbum2\\img-13.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imagesAlbum2\\img-14.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imagesAlbum2\\img-14.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imagesAlbum2\\img-15.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imagesAlbum2\\img-15.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imagesAlbum2\\img-16.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imagesAlbum2\\img-16.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imagesAlbum2\\img-2.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imagesAlbum2\\img-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imagesAlbum2\\img-3.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imagesAlbum2\\img-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imagesAlbum2\\img-4.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imagesAlbum2\\img-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imagesAlbum2\\img-5.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imagesAlbum2\\img-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imagesAlbum2\\img-6.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imagesAlbum2\\img-6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imagesAlbum2\\img-7.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imagesAlbum2\\img-7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imagesAlbum2\\img-8.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imagesAlbum2\\img-8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imagesAlbum2\\img-9.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imagesAlbum2\\img-9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imagesAlbum3\\Album3.json",
+      "PackagePath": "staticwebassets\\uploads\\imagesAlbum3\\Album3.json"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imagesAlbum3\\img-1.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imagesAlbum3\\img-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imagesAlbum3\\img-2.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imagesAlbum3\\img-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imagesAlbum3\\img-3.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imagesAlbum3\\img-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imagesAlbum3\\img-4.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imagesAlbum3\\img-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imagesAlbum3\\img-5.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imagesAlbum3\\img-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imagesAlbum3\\img-6.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imagesAlbum3\\img-6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imagesAlbum3\\img-7.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imagesAlbum3\\img-7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imagesAlbum3\\img-8.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imagesAlbum3\\img-8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imagesAlbum4\\Album4.json",
+      "PackagePath": "staticwebassets\\uploads\\imagesAlbum4\\Album4.json"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imagesAlbum4\\img-1.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imagesAlbum4\\img-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imagesAlbum4\\img-10.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imagesAlbum4\\img-10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imagesAlbum4\\img-2.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imagesAlbum4\\img-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imagesAlbum4\\img-3.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imagesAlbum4\\img-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imagesAlbum4\\img-4.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imagesAlbum4\\img-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imagesAlbum4\\img-5.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imagesAlbum4\\img-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imagesAlbum4\\img-6.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imagesAlbum4\\img-6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imagesAlbum4\\img-7.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imagesAlbum4\\img-7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imagesAlbum4\\img-8.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imagesAlbum4\\img-8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imagesAlbum4\\img-9.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imagesAlbum4\\img-9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imagesAlbum5\\Album5.json",
+      "PackagePath": "staticwebassets\\uploads\\imagesAlbum5\\Album5.json"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imagesAlbum5\\Album6.json",
+      "PackagePath": "staticwebassets\\uploads\\imagesAlbum5\\Album6.json"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imagesAlbum5\\Album8.json",
+      "PackagePath": "staticwebassets\\uploads\\imagesAlbum5\\Album8.json"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imagesAlbum5\\img-1.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imagesAlbum5\\img-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imagesAlbum5\\img-10.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imagesAlbum5\\img-10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imagesAlbum5\\img-11.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imagesAlbum5\\img-11.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imagesAlbum5\\img-12.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imagesAlbum5\\img-12.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imagesAlbum5\\img-2.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imagesAlbum5\\img-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imagesAlbum5\\img-3.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imagesAlbum5\\img-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imagesAlbum5\\img-4.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imagesAlbum5\\img-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imagesAlbum5\\img-5.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imagesAlbum5\\img-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imagesAlbum5\\img-6.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imagesAlbum5\\img-6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imagesAlbum5\\img-7.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imagesAlbum5\\img-7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imagesAlbum5\\img-8.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imagesAlbum5\\img-8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imagesAlbum5\\img-9.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imagesAlbum5\\img-9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imagesAlbum6\\Album6.json",
+      "PackagePath": "staticwebassets\\uploads\\imagesAlbum6\\Album6.json"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imagesAlbum6\\img-1.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imagesAlbum6\\img-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imagesAlbum6\\img-10.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imagesAlbum6\\img-10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imagesAlbum6\\img-11.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imagesAlbum6\\img-11.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imagesAlbum6\\img-12.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imagesAlbum6\\img-12.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imagesAlbum6\\img-13.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imagesAlbum6\\img-13.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imagesAlbum6\\img-14.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imagesAlbum6\\img-14.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imagesAlbum6\\img-15.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imagesAlbum6\\img-15.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imagesAlbum6\\img-16.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imagesAlbum6\\img-16.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imagesAlbum6\\img-2.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imagesAlbum6\\img-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imagesAlbum6\\img-3.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imagesAlbum6\\img-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imagesAlbum6\\img-4.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imagesAlbum6\\img-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imagesAlbum6\\img-5.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imagesAlbum6\\img-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imagesAlbum6\\img-6.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imagesAlbum6\\img-6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imagesAlbum6\\img-7.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imagesAlbum6\\img-7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imagesAlbum6\\img-8.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imagesAlbum6\\img-8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imagesAlbum6\\img-9.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imagesAlbum6\\img-9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imagesAlbum7\\Album7.json",
+      "PackagePath": "staticwebassets\\uploads\\imagesAlbum7\\Album7.json"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imagesAlbum7\\img-1.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imagesAlbum7\\img-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imagesAlbum7\\img-10.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imagesAlbum7\\img-10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imagesAlbum7\\img-11.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imagesAlbum7\\img-11.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imagesAlbum7\\img-12.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imagesAlbum7\\img-12.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imagesAlbum7\\img-13.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imagesAlbum7\\img-13.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imagesAlbum7\\img-14.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imagesAlbum7\\img-14.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imagesAlbum7\\img-15.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imagesAlbum7\\img-15.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imagesAlbum7\\img-16.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imagesAlbum7\\img-16.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imagesAlbum7\\img-2.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imagesAlbum7\\img-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imagesAlbum7\\img-3.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imagesAlbum7\\img-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imagesAlbum7\\img-4.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imagesAlbum7\\img-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imagesAlbum7\\img-5.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imagesAlbum7\\img-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imagesAlbum7\\img-6.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imagesAlbum7\\img-6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imagesAlbum7\\img-7.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imagesAlbum7\\img-7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imagesAlbum7\\img-8.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imagesAlbum7\\img-8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imagesAlbum7\\img-9.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imagesAlbum7\\img-9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imagesAlbum8\\Album8.json",
+      "PackagePath": "staticwebassets\\uploads\\imagesAlbum8\\Album8.json"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imagesAlbum8\\img-1.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imagesAlbum8\\img-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imagesAlbum8\\img-2.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imagesAlbum8\\img-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imagesAlbum8\\img-3.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imagesAlbum8\\img-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imagesAlbum8\\img-4.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imagesAlbum8\\img-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imagesAlbum8\\img-5.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imagesAlbum8\\img-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imagesAlbum8\\img-6.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imagesAlbum8\\img-6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imagesAlbum8\\img-7.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imagesAlbum8\\img-7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\WeddingWebsiteProject\\wwwroot\\uploads\\imagesAlbum8\\img-8.jpg",
+      "PackagePath": "staticwebassets\\uploads\\imagesAlbum8\\img-8.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.WeddingWebsiteProject.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.WeddingWebsiteProject.props",
+      "PackagePath": "build\\WeddingWebsiteProject.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.WeddingWebsiteProject.props",
+      "PackagePath": "buildMultiTargeting\\WeddingWebsiteProject.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.WeddingWebsiteProject.props",
+      "PackagePath": "buildTransitive\\WeddingWebsiteProject.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

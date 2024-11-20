@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Real Love</title>
+
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="~/assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="~/assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="~/assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="~/assets/favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="~/assets/favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Embed Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="~/assets/css/main.css" />
+
+    <!-- Script -->
+    <script src="~/assets/js/script.js"></script>
+  </head>
+  <body>
+    <header id="header">
+      @await Html.PartialAsync("_Header")
+    </header>
+    <div class="container-wrap">
+      <!-- background banner -->
+      <div class="background">
+        <div class="overlay"></div>
+        <div class="content">
+            <h1>REAL LOVE CAM KẾT SẼ MANG LẠI NHIỀU GIÁ TRỊ NHẤT DÀNH CHO KHÁCH HÀNG</h1>
+            <p>Nắm bắt được trọn vẹn những khoảnh khắc lãng mạn và đáng nhớ nhất và cùng vẽ lên câu chuyện tình yêu đẹp của bạn.</p>
+            <a href="#" id="openModal">LIÊN HỆ</a>
+        </div>
+      </div>
+      <!-- Modal -->
+      <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Liên Hệ</h2>
+            <form id="contactForm">
+                <label for="name">Tên:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Tin nhắn:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <div class="send">
+                  <button class="btn-send" type="submit">Gửi</button>
+                </div>
+            </form>
+        </div>
+      </div>
+       <!-- content -->
+      <div class="container max-width-100">
+        <div class="main_content main_fix clear">
+          <div class="w_1000">
+            <div class="title-main">
+              <span>Giới thiệu</span>
+            </div>
+            <div class="wpb_wrapper">
+              <span>Real Love – Cùng Bạn Vẽ Lên Câu Chuyện Tình Yêu</span>
+            </div>
+
+            <div class="content-main">
+              <p>
+                <span>
+                  Hình ảnh đám cưới là một trong những điều quý giá của các cặp đôi. Nó là nơi lưu trữ những khoảnh khắc đẹp của cuộc đời. Hiểu được tầm quan trọng đó, Híp Studio đã thành lập và là nơi nhiếp ảnh gia lưu trữ những sự kiện tuyệt vời của các cặp cô dâu và chú rể. Thông qua Híp Studio, các cặp dâu rể sẽ thấy những bức ảnh sống động, đầy màu sắc và đó là nơi lưu giữ những kỷ niệm đáng nhớ của cuộc đời.
+    
+                  Đến với Híp Studio, dâu rể sẽ được tư vấn kỹ về các gói chụp, được ngắm mình trong những bộ váy cưới sang trọng và mới nhất. Ngoài ra, với hơn 6 năm kinh nghiệm trong việc chụp hình cưới. Híp Studio đã được hàng ngàn cặp dâu rể yêu mến và ủng hộ. Và không phụ lòng mong đợi đó, Híp Studio đã dần cải thiện về cách chụp ảnh ( luôn có những ý tưởng mới ), thợ make up hoàn thiện kỹ năng hơn (đáp ứng được tất cả những nhu cầu của dâu rể ). Híp Studio sẽ luôn bắt trọn những khoảnh khắc đẹp nhất của dâu rể và cho dâu rể những bức ảnh đáng nhớ.
+    
+                  Và đây là một số hình ảnh Híp Studio đã thực hiện. Dâu rể có thể tham khảo thêm:
+                </span>
+              </p>
+              <div class="img-content-main">
+                @if(ViewBag.imageUrlIntroduce1 != null){
+                  <img src="@ViewBag.imageUrlIntroduce1" alt="Uploaded Image" />
+                }else if(ViewBag.Message != null){
+                  <p>@ViewBag.Message</p>
+                }
+              </div>
+              <p class="title-img-content-main">
+                <u><strong>NGOẠI CẢNH A</strong></u>
+              </p>
+              <!-- <input type="file" id="imageUploader"> -->
+              <p>
+                <span>
+                  Được thành lập từ năm 2012, cho đến nay September Studio được biết đến là một studio ảnh cưới hàng đầu tại TP. HCM. September Studio được đông đảo các cặp đôi lựa chọn là nơi gửi gắm niềm tin để thực hiện bộ ảnh cưới với những khung hình và ý tưởng sáng tạo đậm chất nghệ thuật, những bộ ảnh cưới đầy màu sắc và cá tính riêng biệt với các phong cách chụp ảnh không ngừng thay đổi cập nhật theo xu hướng nhưng vẫn lãng mạn, ghi trọn khoảnh khắc đẹp nhất của đôi bạn.
+                </span>
+              </p>
+              <div class="img-content-main">
+                @if(ViewBag.imageUrlIntroduce2 != null){
+                  <img src="@ViewBag.imageUrlIntroduce2" alt="Uploaded Image" />
+                }else if(ViewBag.Message != null){
+                  <p>@ViewBag.Message</p>
+                }
+              </div>
+              <p class="title-img-content-main">
+                <u>
+                  <strong>NGOẠI CẢNH B</strong>
+                </u>
+              </p>
+              
+              <p>
+                <span>
+                  Ưu thế đặc biệt của September Studio đến từ ekip trẻ trung, năng động nhưng dày dặn kinh nghiệm và nhiệt tình, trang thiết bị hiện đại nhất, những mẫu áo cưới sang trọng nhiều kiểu dáng và luôn đi theo xu hướng mới nhất từng mùa, cho cô dâu tha hồ lựa chọn chiếc váy cưới phù hợp với mình…  Chính vì vậy, September Studio luôn nắm bắt được trọn vẹn những khoảnh khắc lãng mạn và đáng nhớ nhất của các cặp đôi, cùng các cặp đôi vẽ lên câu chuyện tình yêu của họ. Các nhiếp ảnh gia nhiệt tình tại September Studio luôn thích tìm tòi những góc máy lạ, độc đáo, tự nhiên để thể hiện hình ảnh mới lạ, độc đáo nhất trong các bức ảnh cưới giữ trọn vẹn khoảnh khắc hạnh phúc của cô dâu chú rể.
+
+                  Với niềm đam mê và sự đầu tư, phát triển cố gắng không ngừng, trong năm 2017 SEPTEMBER STUDIO đã vinh dự được nhận giải thưởng “Top 10 Thương Hiệu Có Sản Phẩm Dịch Vụ Uy Tín- An Toàn – Chất Lượng năm 2017” do báo Đời Sống và Tiêu Dùng, Viet Nam Business Council công nhận. Đây không chỉ là thành quả sau bao quá trình nỗ lực, tận tâm vì công việc, phục vụ khách hàng tốt nhất mà còn là nguồn động lực lớn giúp cho đội ngũ của September Studio có thể mang đến sản phẩm và dịch vụ tốt hơn cho khách hàng, cho các cặp đôi cô dâu, chú rể của chúng tôi.
+                </span>
+              </p>
+              <div class="img-content-main">
+                @if(ViewBag.imageUrlIntroduce3 != null){
+                  <img src="@ViewBag.imageUrlIntroduce3" alt="Uploaded Image" />
+                }else if(ViewBag.Message != null){
+                  <p>@ViewBag.Message</p>
+                }              </div>
+              <p class="title-img-content-main">
+                <u>
+                  <strong>NGOẠI CẢNH C</strong>
+                </u>
+              </p>
+              <p>
+                <span>
+                  Phương châm kinh doanh của September Studio là luôn đặt chữ “TÍN” lên hàng đầu và luôn đối đãi với khách hàng như “thượng đế”,. Cùng với đó, September Studio vẫn không ngừng cố gắng và hoàn thiện mang đến cho khách hàng những bộ ảnh cưới, những video đám cưới ưng ý nhất kể cả trong những trường hợp khó khăn. Có nhiều khi, những bộ ảnh tại September Studio phải thực hiện trong điều kiện thời gian gấp gáp do yêu cầu của khách hàng và thời tiết không ủng hộ nhưng với sự cố gắng của hai bên, cuối cùng kết quả vẫn thành công tốt đẹp.
+
+                  Hãy theo dõi trang fanpage của September Studio tại đây để chiêm ngưỡng những hình ảnh thực tế, những album cưới đẹp nhất của chúng tôi cũng như những đánh giá từ các cặp đôi đã sử dụng dịch vụ tại Studio. Ngoài ra, September Studio còn nhận được rất nhiều sự tín nhiệm từ các tạp chí và website lớn nhất như, HTV…
+                </span>
+              </p>
+              <div class="img-content-main">
+                @if(ViewBag.imageUrlIntroduce4 != null){
+                  <img src="@ViewBag.imageUrlIntroduce4" alt="Uploaded Image" />
+                }else if(ViewBag.Message != null){
+                  <p>@ViewBag.Message</p>
+                }
+              </div>
+              <p class="title-img-content-main">
+                <u>
+                  <strong>NGOẠI CẢNH D</strong>
+                </u>
+              </p>
+              <p>
+                <span>
+                  Để có được những thành công chỉ sau vài năm hoạt động tại thị trường sôi động và đầy cạnh tranh như TP. HCM, không phải là điều đơn giản. Đó là cả quá trình bền bỉ phấn đấu và hoàn thiện, trong số đó, quan trọng nhất phải kể tới nhiệt huyết của đội ngũ làm việc trẻ và tài năng. Ưu thế này được thể hiện rất rõ trong cách từng thành viên chuẩn bị và thực hiện ảnh hay video cưới. Để giúp các cặp uyên ương ghi lại những khoảnh khắc hạnh phúc nhất cuộc đời, ê kíp September Studio có thể làm việc chẳng nề khó khăn, vất vả, nhiều khi lấm lem bùn đất hay mưa ướt cả người để cuối cùng mang đến cho các cặp đôi sản phẩm hoàn hảo nhất.
+
+                  Nhằm nâng cao chất lượng dịch vụ và tri ân khách hàng, September Studio luôn tập trung cải tiến hệ thống máy móc và trau dồi kỹ năng cho đội ngũ nhân viên. Đặc biệt, với những bộ ảnh chụp ngoại cảnh tại các địa điểm nổi tiếng như Hồ Cốc hay Đà Lạt, studio còn cung cấp thêm gói chụp flycam độc đáo. Góc máy từ trên cao bao phủ toàn cảnh thiên nhiên hùng vĩ sẽ giúp ảnh cưới của bạn thêm ấn tượng và có thể bắt trọn những khoảnh khắc hạnh phúc, lãng mạn của cô dâu và chú rể.
+                  
+                  Tại September Studio chúng tôi hiểu rằng không phải cô dâu – chú rể nào cũng tự tin và biết cách tạo dáng chụp ảnh cưới, vì vậy chúng tôi luôn hỗ trợ khách hàng bằng cả tấm lòng, hướng dẫn và tạo không khí vui vẻ cho các cặp đôi. Bạn có thể thấy rõ điều ấy qua video ghi lại một ngày làm việc thông thường của ê kíp September Studio dưới đây: 
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container max-width-100 form-container-wrap">
+        <div class="form-container">
+          <h1>ĐỂ HIỂU RÕ HƠN VỀ REAL LOVE</h1>
+          <p>Vui lòng để lại thông tin của bạn để được tư vấn tốt nhất bạn nha!</p>
+    
+          <form action="#">
+              <input type="text" placeholder="Họ Tên" required>
+              <input type="email" placeholder="Địa Chỉ Email (*)" required>
+              <input type="submit" value="ĐĂNG KÝ">
+          </form>
+    
+          <!-- Decoration (leaves image) -->
+          <div class="decoration">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAB38AAAKBCAYAAABXgWHQAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwAAAABJRU5ErkJggg==" alt="Leaf Decoration">
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <footer class="footer" id="footer">
+      @await Html.PartialAsync("_Footer")
+    </footer>
+    @await Html.PartialAsync("play-music-btn")
+    @await Html.PartialAsync("contact-buttons")
+    <script src="~/assets/js/main.js"></script>
+    <script src="~/assets/js/introduce.js"></script>
+  </body>
+</html>

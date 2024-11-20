@@ -1,0 +1,47 @@
+html {
+  // common
+  --text-color: #1a162e;
+
+  // Connection
+  --connection-color: #1a162e;
+
+  // Top bar
+  --top-bar-bg: #eeeeee;
+  --color-icon: brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(0%)
+    hue-rotate(21deg) brightness(95%) contrast(100%);
+
+  // Main Header
+  --main-header-bg: #ffffff7e;
+
+  // Nav bar
+  --nav-bar-mobile-bg: #fff;
+
+  // Slideshow
+  --slideshow-bg: #fff;
+
+  // Dropdown bg
+  --dropdown-bg: #fff;
+
+  // Social connect bg
+  --social-connect-bg: #fff;
+
+  // Album box-shadow
+  --album-box-shadow: rgba(0, 0, 0, 0.24);
+
+  // Section
+  --section-bg: #f7f7ff;
+  --text-section: #716d6d;
+   // Introduce
+   --container-wrap-bg:#f7f7ff;
+   --title-introduce:#686766;
+  // Footer
+  --footer-bg: #eee;
+  --logo-box-shadow: rgba(5, 178, 89, 0.489) -5px 5px, rgba(5, 178, 89, 0.3) -10px 10px, rgba(5, 178, 89, 0.2) -15px 15px, rgba(5, 178, 89, 0.1) -20px 20px, rgba(5, 178, 89, 0.05) -25px 25px;
+
+  // Video block
+  --video-block-bg: #eee;
+
+  // Map 
+  --map-bg: #f7f7f7
+
+}

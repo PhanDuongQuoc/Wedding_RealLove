@@ -1,0 +1,44 @@
+html.dark {
+  // common
+  --text-color: #fff;
+
+  --connection-color: #fff;
+  --top-bar-bg: #171c28;
+  --color-icon: brightness(0) saturate(100%) invert(100%) sepia(0%)
+    saturate(7500%) hue-rotate(343deg) brightness(101%) contrast(101%);
+
+  // Main Header
+  --main-header-bg: #2d2c2c;
+
+  // Nav bar
+  --nav-bar-mobile-bg: #292e39;
+
+  // Slideshow
+  --slideshow-bg: #353535;
+  
+  // Dropdown bg
+  --dropdown-bg: #292e39;
+
+  // Album box-shadow
+  --album-box-shadow: rgba(226, 219, 219, 0.24);
+
+  // Section
+  --section-bg: #232324;
+  --text-section: #dbcfcf;  
+  // Introduce
+  --container-wrap-bg:#232324;
+  --title-introduce:#fff;
+   // Footer
+   --footer-bg: #262d3c;
+   --logo-box-shadow: rgba(46, 217, 240, 0.4) -5px 5px, rgba(46, 217, 240, 0.3) -10px 10px, rgba(46, 217, 240, 0.2) -15px 15px, rgba(46, 217, 240, 0.1) -20px 20px, rgba(46, 217, 240, 0.05) -25px 25px;
+
+   // Video block
+  --video-block-bg: #262d3c;
+
+  // Map 
+  --map-bg: #262d3c;
+
+  // Login btn
+  --login-btn-bg: #1e1e1f7d;
+}
+
