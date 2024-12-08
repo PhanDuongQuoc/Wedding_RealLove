@@ -367,3 +367,4 @@ C:\Users\PC\WeddingWebsiteProject\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysi
 C:\Users\PC\WeddingWebsiteProject\obj\Debug\net8.0\WeddingWebsiteProject.csproj.AssemblyReference.cache
 C:\Users\PC\WeddingWebsiteProject\obj\Debug\net8.0\WeddingWebsiteProject.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\PC\WeddingWebsiteProject\obj\Debug\net8.0\WeddingW.CE608904.Up2Date
+C:\Users\PC\WeddingWebsiteProject\obj\Debug\net8.0\WeddingWebsiteProject.sourcelink.json

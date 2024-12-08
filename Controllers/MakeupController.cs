@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.RequestDecompression;
 using Microsoft.AspNetCore.Routing.Constraints;
 using Microsoft.CodeAnalysis;
 using System.IO;
@@ -18,6 +19,16 @@ namespace WeddingWebsiteProject.Controllers
         private readonly string imageInfoFileMakeup6 = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/uploads/imageDataMakeup6.json");
         private readonly string imageInfoFileMakeup7 = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/uploads/imageDataMakeup7.json");
         private readonly string imageInfoFileMakeup8 = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/uploads/imageDataMakeup8.json");    
+        // danh sách hinh ảnh makeup 
+        private readonly string baseUploadMakeupPath1 = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/uploads/imagesMakeup1" );
+        private readonly string baseUploadMakeupPath2 = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/uploads/imagesMakeup2" );
+        private readonly string baseUploadMakeupPath3 = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/uploads/imagesMakeup3" );
+        private readonly string baseUploadMakeupPath4 = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/uploads/imagesMakeup4" );
+        private readonly string baseUploadMakeupPath5 = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/uploads/imagesMakeup5" );
+        private readonly string baseUploadMakeupPath6 = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/uploads/imagesMakeup6" );
+        private readonly string baseUploadMakeupPath7 = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/uploads/imagesMakeup7" );
+        private readonly string baseUploadMakeupPath8 = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/uploads/imagesMakeup8" );
+        
         private readonly ILogger<MakeupController> _logger;
         public MakeupController(ILogger<MakeupController> logger)
         {
@@ -86,6 +97,19 @@ namespace WeddingWebsiteProject.Controllers
             }
             return View("Index");
 
+        }
+
+        public IActionResult showMakeup(string makeupName){
+            // hiển thị danh sách makeup 1
+            var albumFilePath = Path.Combine(baseUploadMakeupPath1, $"{makeupName}.json");
+            List<string> imageList = new List<string>();
+            if(System.IO.File.Exists(albumFilePath)){
+                var existingData = System.IO.File.ReadAllText(albumFilePath);
+                imageList = JsonSerializer.Deserialize<List<string>>(existingData) ?? new List<string>();
+
+            }
+            
+            return View("_MakeupDetail", imageList);
         }
     }
 }

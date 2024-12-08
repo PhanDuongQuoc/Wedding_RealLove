@@ -56,9 +56,25 @@ namespace WeddingWebsiteProject.Controllers
         private readonly string baseUploadPath8 = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/uploads/imagesAlbum8");
 
 
+        // danh sách hình ảnh makeup
+        private readonly string baseUploadMakeupPath1 = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/uploads/imagesMakeup1" );
+        private readonly string baseUploadMakeupPath2 = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/uploads/imagesMakeup2" );
+        private readonly string baseUploadMakeupPath3 = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/uploads/imagesMakeup3" );
+        private readonly string baseUploadMakeupPath4 = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/uploads/imagesMakeup4" );
+        private readonly string baseUploadMakeupPath5 = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/uploads/imagesMakeup5" );
+        private readonly string baseUploadMakeupPath6 = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/uploads/imagesMakeup6" );
+        private readonly string baseUploadMakeupPath7 = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/uploads/imagesMakeup7" );
+        private readonly string baseUploadMakeupPath8 = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/uploads/imagesMakeup8" );
 
-
-
+        // danh sách hình ảnh trang phục wedding gown page 
+        private readonly string baseUploadGownPagePath1 = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/uploads/imagesGownPage1" );
+        private readonly string baseUploadGownPagePath2 = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/uploads/imagesGownPage2" );
+        private readonly string baseUploadGownPagePath3 = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/uploads/imagesGownPage3" );
+        private readonly string baseUploadGownPagePath4 = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/uploads/imagesGownPage4" );
+        private readonly string baseUploadGownPagePath5 = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/uploads/imagesGownPage5" );
+        private readonly string baseUploadGownPagePath6 = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/uploads/imagesGownPage6" );
+        private readonly string baseUploadGownPagePath7 = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/uploads/imagesGownPage7" );
+        private readonly string baseUploadGownPagePath8 = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/uploads/imagesGownPage8" );
 
 
         private readonly ILogger<UploadController> _logger;
@@ -619,8 +635,178 @@ namespace WeddingWebsiteProject.Controllers
             }
 
             ViewBag.ImageListAlbum8 = imageListAlbum8;
-            
+            // đọc danh sách hình ảnh từ tệp JSON của trang Makeup
+            // đọc danh sách hình ảnh Makeup1
+            var makeupFilePath1 = Path.Combine(baseUploadMakeupPath1, "Makeup1.json");
+            List<string> imageListMakeup1 = new List<string>();
+            if(System.IO.File.Exists(makeupFilePath1)){
+                var jsonData = System.IO.File.ReadAllText(makeupFilePath1);
+                imageListMakeup1 = JsonSerializer.Deserialize<List<string>>(jsonData) ?? new List<string>();
+            }
 
+            ViewBag.ImageListMakeup1 = imageListMakeup1;
+
+            // đọc danh sách hình ảnh makeup 2
+
+            var makeupFilePath2 = Path.Combine(baseUploadMakeupPath2, "Makeup2.json");
+            List<string> imageListMakeup2 = new List<string>();
+            if(System.IO.File.Exists(makeupFilePath2))
+            {
+                var jsonData = System.IO.File.ReadAllText(makeupFilePath2);
+                imageListMakeup2 = JsonSerializer.Deserialize<List<string>>(jsonData)?? new List<string>();
+            }
+            ViewBag.ImageListMakeup2 = imageListMakeup2;
+            // đọc dnah sách hình ảnh makeup3
+            var makeupFilePath3 = Path.Combine(baseUploadMakeupPath3, "Makeup3.json");
+            List<string> imageListMakeup3 = new List<string>();
+            if(System.IO.File.Exists(makeupFilePath3))
+            {
+                var jsonData = System.IO.File.ReadAllText(makeupFilePath3);
+                imageListMakeup3 = JsonSerializer.Deserialize<List<string>>(jsonData)?? new List<string>();
+            }
+
+            ViewBag.ImageListMakeup3 = imageListMakeup3;
+
+            // đọc danh sách hình ảnh makeup4
+
+            var makeupFilePath4 = Path.Combine(baseUploadMakeupPath4, "Makeup3.json");
+            List<string> imageListMakeup4 = new List<string>();
+            if(System.IO.File.Exists(makeupFilePath4)){
+                var jsonData = System.IO.File.ReadAllText(makeupFilePath4);
+                imageListMakeup4 = JsonSerializer.Deserialize<List<string>>(jsonData) ?? new List<string>(); 
+            } 
+
+            ViewBag.ImageListMakeup4 = imageListMakeup4;
+
+            // đọc danh sách hình ảnh makeup 5
+
+            var makeupFilePath5 = Path.Combine(baseUploadMakeupPath5, "Makeup5.json");
+            List<string> imageListMakeup5 = new List<string>();
+            if(System.IO.File.Exists(makeupFilePath5)){
+                var jsonData = System.IO.File.ReadAllText(makeupFilePath5);
+                imageListMakeup5 = JsonSerializer.Deserialize<List<string>>(jsonData) ?? new List<string>();
+
+            }
+            ViewBag.ImageListMakeup5 =imageListMakeup5;
+
+
+
+            // đọc danh sách hình ảnh makeup 6
+
+
+            var makeupFilePath6 = Path.Combine(baseUploadMakeupPath6, "Makeup6.json");
+            List<string> imageListMakeup6 = new List<string>();
+            if(System.IO.File.Exists(makeupFilePath6))
+            {
+                var jsonData = System.IO.File.ReadAllText(makeupFilePath6);
+                imageListMakeup6 = JsonSerializer.Deserialize<List<string>>(jsonData) ?? new List<string>();
+            }
+            ViewBag.ImageListMakeup6 = imageListMakeup6;
+
+
+            // đọc danh sách hình ảnh makeup 7
+
+            var makeupFilePath7 = Path.Combine(baseUploadMakeupPath7, "Makeup7.json");
+            List<string> imageListMakeup7 = new List<string>();
+            if(System.IO.File.Exists(makeupFilePath7)){
+                var jsonData = System.IO.File.ReadAllText(makeupFilePath7);
+                 imageListMakeup7 = JsonSerializer.Deserialize<List<string>>(jsonData) ?? new List<string>();
+            }
+
+            ViewBag.ImageListMakeup7 = imageListAlbum7;
+
+
+            // đọc danh sách hình ảnh makeup 8
+
+            var makeupFilePath8 = Path.Combine(baseUploadMakeupPath8, "Makeup8.json");
+            List<string> imageListMakeup8 = new List<string>();
+            if(System.IO.File.Exists(makeupFilePath8)){
+                var jsonData = System.IO.File.ReadAllText(makeupFilePath8);
+                imageListMakeup8 = JsonSerializer.Deserialize<List<string>>(jsonData) ?? new List<string>();
+            }
+            ViewBag.ImageListMakeup8 =imageListMakeup8;
+            // danh sách wedding gown page 
+            // danh sách wedding gown page 1
+            var gownpageFilePath1 = Path.Combine(baseUploadGownPagePath1, "GownPage1.json");
+            List<string> imageListGownPage1 = new List<string>();
+            if(System.IO.File.Exists(gownpageFilePath1)){
+                var jsonData = System.IO.File.ReadAllText(gownpageFilePath1);
+                imageListGownPage1 = JsonSerializer.Deserialize<List<string>>(jsonData) ?? new List<string>();
+            }
+
+            ViewBag.ImageListGownPage1 = imageListGownPage1;
+
+            // danh sách wedding gown page 2
+            var gownpageFilePath2 = Path.Combine(baseUploadGownPagePath2, "GownPage2.json");
+            List<string> imageListGownPage2 = new List<string>();
+            if(System.IO.File.Exists(gownpageFilePath2)){
+                var jsonData = System.IO.File.ReadAllText(gownpageFilePath2);
+                imageListGownPage2 = JsonSerializer.Deserialize<List<string>>(jsonData) ?? new List<string>();
+            } 
+
+            ViewBag.ImageListGownPage2 = imageListGownPage2;
+
+            // danh sách wedding gown page 3
+
+            var gownpageFilePath3 = Path.Combine(baseUploadGownPagePath3, "GownPage3.json");
+            List<string> imageListGownPage3 = new List<string>();
+            if(System.IO.File.Exists(gownpageFilePath3))
+            {
+                var jsonData = System.IO.File.ReadAllText(gownpageFilePath3);
+                imageListGownPage3 = JsonSerializer.Deserialize<List<string>>(jsonData) ?? new List<string>();  
+            } 
+            ViewBag.ImageListGownPage3 = imageListGownPage3;
+
+            // danh  sách hình ảnh wedding gown page 4
+
+            var gownpageFilePath4 = Path.Combine(baseUploadGownPagePath4, "GownPage4.json");
+            List<string> imageListGownPage4 = new List<string>();
+            if(System.IO.File.Exists( gownpageFilePath4)){
+                var jsonData = System.IO.File.ReadAllText( gownpageFilePath4);
+                imageListGownPage4 = JsonSerializer.Deserialize<List<string>>(jsonData) ?? new List<string>();
+            }
+
+            ViewBag.ImageListGownPage4 = imageListGownPage4;
+            // danh sách hình ảnh wedding gown page 5
+            var gownpageFilePath5 = Path.Combine(baseUploadGownPagePath5,"GownPage5.json");
+            List<string> imageListGownPage5 =  new List<string>();
+            if(System.IO.File.Exists(gownpageFilePath5)){
+                var jsonData = System.IO.File.ReadAllText(gownpageFilePath5);
+                imageListGownPage5 = JsonSerializer.Deserialize<List<string>>(jsonData) ?? new List<string>();
+
+            }
+              ViewBag.ImageListGownPage5 = imageListGownPage5;
+
+              // danh sách hình ảnh wedding gown page 6 
+              var gownpageFilePath6 = Path.Combine(baseUploadGownPagePath6, "GownPage6.json");
+              List<string> imageListGownPage6 = new List<string>();
+              if(System.IO.File.Exists(gownpageFilePath6)){
+                var jsonData = System.IO.File.ReadAllText(gownpageFilePath6);
+                imageListGownPage6 = JsonSerializer.Deserialize<List<string>>(jsonData) ?? new List<string>();
+              }
+
+              ViewBag.ImageListGownPage6 = imageListGownPage6;
+
+              // danh sách hình ảnh wedding gown page 7
+
+              var gownpageFilePath7 = Path.Combine(baseUploadGownPagePath7, "GownPage7.json");
+              List<string> imageListGownPage7 = new List<string>();
+              if(System.IO.File.Exists(gownpageFilePath7)){
+                 var jsonData = System.IO.File.ReadAllText(gownpageFilePath7);
+                 imageListGownPage7 = JsonSerializer.Deserialize<List<string>>(jsonData) ?? new List<string>();   
+              }
+
+              ViewBag.ImageListGownPage7 = imageListGownPage7;
+              // danh sách hình ảnh wedding gown page8 
+
+              var gownpageFilePath8 = Path.Combine(baseUploadGownPagePath8, "GownPage8.json");
+              List<string> imageListGownPage8 = new List<string>();
+              if(System.IO.File.Exists(gownpageFilePath8)){
+                var jsonData = System.IO.File.ReadAllText(gownpageFilePath8);
+                imageListGownPage8= JsonSerializer.Deserialize<List<string>>(jsonData) ?? new List<string>();
+              }
+
+              ViewBag.ImageListGownPage8 = imageInfoFileMakeup8;
             return View();
         }
     
@@ -2091,6 +2277,846 @@ namespace WeddingWebsiteProject.Controllers
             // Chuyển hướng lại trang Index để hiển thị danh sách hình ảnh mới
             return RedirectToAction("Index");
         }
+
+         // Upaload danh sách hình ảnh cho Makeup 1
+        [HttpPost]
+        public IActionResult UploadMakeup1(List<IFormFile> file)
+        {
+            if (file.Count == 0)
+            {
+                ViewBag.MessageMakeup1 = "No files selected.";
+                return RedirectToAction("Index");
+            }
+
+            // Lưu trữ các ảnh đã upload
+            var uploadedImages = new List<string>();
+
+            foreach (var img in file)
+            {
+                var fileName = Path.GetFileName(img.FileName);
+                var filePath = Path.Combine(baseUploadMakeupPath1, fileName);
+
+                // Lưu ảnh vào thư mục
+                using (var stream = new FileStream(filePath, FileMode.Create))
+                {
+                    img.CopyTo(stream);
+                }
+
+                // Lưu đường dẫn ảnh
+                var imageUrl = $"/uploads/imagesMakeup1/{fileName}";
+                uploadedImages.Add(imageUrl);
+            }
+
+            // Cập nhật danh sách hình ảnh
+            var albumFilePath = Path.Combine(baseUploadMakeupPath1,"Makeup1.json");
+            List<string> imageListMakeup1;
+            if (System.IO.File.Exists(albumFilePath))
+            {
+                var existingData = System.IO.File.ReadAllText(albumFilePath);
+                imageListMakeup1 = JsonSerializer.Deserialize<List<string>>(existingData) ?? new List<string>();
+            }
+            else
+            {
+                imageListMakeup1 = new List<string>();
+            }
+
+            // Thêm các ảnh mới vào danh sách
+            imageListMakeup1.AddRange(uploadedImages);
+
+            // Cập nhật lại danh sách ảnh vào tệp JSON của Album 1
+            var updatedJsonData = JsonSerializer.Serialize(imageListMakeup1);
+            System.IO.File.WriteAllText(albumFilePath, updatedJsonData);
+
+            // Chuyển hướng lại trang Index để hiển thị danh sách hình ảnh mới
+            return RedirectToAction("Index");
+        }
+
+        // Upaload danh sách hình ảnh cho Makeup 1
+        [HttpPost]
+        public IActionResult UploadMakeup2(List<IFormFile> file)
+        {
+            if (file.Count == 0)
+            {
+                ViewBag.MessageMakeup2 = "No files selected.";
+                return RedirectToAction("Index");
+            }
+
+            // Lưu trữ các ảnh đã upload
+            var uploadedImages = new List<string>();
+
+            foreach (var img in file)
+            {
+                var fileName = Path.GetFileName(img.FileName);
+                var filePath = Path.Combine(baseUploadMakeupPath2, fileName);
+
+                // Lưu ảnh vào thư mục
+                using (var stream = new FileStream(filePath, FileMode.Create))
+                {
+                    img.CopyTo(stream);
+                }
+
+                // Lưu đường dẫn ảnh
+                var imageUrl = $"/uploads/imagesMakeup2/{fileName}";
+                uploadedImages.Add(imageUrl);
+            }
+
+            // Cập nhật danh sách hình ảnh
+            var albumFilePath = Path.Combine(baseUploadMakeupPath2,"Makeup2.json");
+            List<string> imageListMakeup2;
+            if (System.IO.File.Exists(albumFilePath))
+            {
+                var existingData = System.IO.File.ReadAllText(albumFilePath);
+                imageListMakeup2 = JsonSerializer.Deserialize<List<string>>(existingData) ?? new List<string>();
+            }
+            else
+            {
+                imageListMakeup2 = new List<string>();
+            }
+
+            // Thêm các ảnh mới vào danh sách
+            imageListMakeup2.AddRange(uploadedImages);
+
+            // Cập nhật lại danh sách ảnh vào tệp JSON của Album 2
+            var updatedJsonData = JsonSerializer.Serialize(imageListMakeup2);
+            System.IO.File.WriteAllText(albumFilePath, updatedJsonData);
+
+            // Chuyển hướng lại trang Index để hiển thị danh sách hình ảnh mới
+            return RedirectToAction("Index");
+        }
+
+        // upload hình ảnh danh sách 3
+        [HttpPost]
+        public IActionResult UploadMakeup3(List<IFormFile> file){
+            if (file.Count == 0)
+            {
+                ViewBag.MessageMakeup3 = "No files selected.";
+                return RedirectToAction("Index");
+            }
+
+            // Lưu trữ các ảnh đã upload
+            var uploadedImages = new List<string>();
+
+            foreach (var img in file)
+            {
+                var fileName = Path.GetFileName(img.FileName);
+                var filePath = Path.Combine(baseUploadMakeupPath3, fileName);
+
+                // Lưu ảnh vào thư mục
+                using (var stream = new FileStream(filePath, FileMode.Create))
+                {
+                    img.CopyTo(stream);
+                }
+
+                // Lưu đường dẫn ảnh
+                var imageUrl = $"/uploads/imagesMakeup3/{fileName}";
+                uploadedImages.Add(imageUrl);
+            }
+
+            // Cập nhật danh sách hình ảnh
+            var albumFilePath = Path.Combine(baseUploadMakeupPath3,"Makeup3.json");
+            List<string> imageListMakeup3;
+            if (System.IO.File.Exists(albumFilePath))
+            {
+                var existingData = System.IO.File.ReadAllText(albumFilePath);
+                imageListMakeup3 = JsonSerializer.Deserialize<List<string>>(existingData) ?? new List<string>();
+            }
+            else
+            {
+                imageListMakeup3 = new List<string>();
+            }
+
+            // Thêm các ảnh mới vào danh sách
+            imageListMakeup3.AddRange(uploadedImages);
+
+            // Cập nhật lại danh sách ảnh vào tệp JSON của Album 3
+            var updatedJsonData = JsonSerializer.Serialize(imageListMakeup3);
+            System.IO.File.WriteAllText(albumFilePath, updatedJsonData);
+
+            // Chuyển hướng lại trang Index để hiển thị danh sách hình ảnh mới
+            return RedirectToAction("Index");
+        }
+
+        // upoad danh sách hình ảnh 4
+
+        [HttpPost]
+        public IActionResult UploadMakeup4(List<IFormFile> file){
+            if (file.Count == 0)
+            {
+                ViewBag.MessageMakeup4 = "No files selected.";
+                return RedirectToAction("Index");
+            }
+
+            // Lưu trữ các ảnh đã upload
+            var uploadedImages = new List<string>();
+
+            foreach (var img in file)
+            {
+                var fileName = Path.GetFileName(img.FileName);
+                var filePath = Path.Combine(baseUploadMakeupPath4, fileName);
+
+                // Lưu ảnh vào thư mục
+                using (var stream = new FileStream(filePath, FileMode.Create))
+                {
+                    img.CopyTo(stream);
+                }
+
+                // Lưu đường dẫn ảnh
+                var imageUrl = $"/uploads/imagesMakeup4/{fileName}";
+                uploadedImages.Add(imageUrl);
+            }
+
+            // Cập nhật danh sách hình ảnh
+            var albumFilePath = Path.Combine(baseUploadMakeupPath4,"Makeup4.json");
+            List<string> imageListMakeup4;
+            if (System.IO.File.Exists(albumFilePath))
+            {
+                var existingData = System.IO.File.ReadAllText(albumFilePath);
+                imageListMakeup4 = JsonSerializer.Deserialize<List<string>>(existingData) ?? new List<string>();
+            }
+            else
+            {
+                imageListMakeup4 = new List<string>();
+            }
+
+            // Thêm các ảnh mới vào danh sách
+            imageListMakeup4.AddRange(uploadedImages);
+
+            // Cập nhật lại danh sách ảnh vào tệp JSON của Album 4
+            var updatedJsonData = JsonSerializer.Serialize(imageListMakeup4);
+            System.IO.File.WriteAllText(albumFilePath, updatedJsonData);
+
+            // Chuyển hướng lại trang Index để hiển thị danh sách hình ảnh mới
+            return RedirectToAction("Index");
+        }
+
+        // upload hình ảnh danh sách 5
+
+        [HttpPost]
+        public IActionResult UploadMakeup5(List<IFormFile> file){
+            if (file.Count == 0)
+            {
+                ViewBag.MessageMakeup5 = "No files selected.";
+                return RedirectToAction("Index");
+            }
+
+            // Lưu trữ các ảnh đã upload
+            var uploadedImages = new List<string>();
+
+            foreach (var img in file)
+            {
+                var fileName = Path.GetFileName(img.FileName);
+                var filePath = Path.Combine(baseUploadMakeupPath5, fileName);
+
+                // Lưu ảnh vào thư mục
+                using (var stream = new FileStream(filePath, FileMode.Create))
+                {
+                    img.CopyTo(stream);
+                }
+
+                // Lưu đường dẫn ảnh
+                var imageUrl = $"/uploads/imagesMakeup5/{fileName}";
+                uploadedImages.Add(imageUrl);
+            }
+
+            // Cập nhật danh sách hình ảnh
+            var albumFilePath = Path.Combine(baseUploadMakeupPath5,"Makeup5.json");
+            List<string> imageListMakeup5;
+            if (System.IO.File.Exists(albumFilePath))
+            {
+                var existingData = System.IO.File.ReadAllText(albumFilePath);
+                imageListMakeup5 = JsonSerializer.Deserialize<List<string>>(existingData) ?? new List<string>();
+            }
+            else
+            {
+                imageListMakeup5 = new List<string>();
+            }
+
+            // Thêm các ảnh mới vào danh sách
+            imageListMakeup5.AddRange(uploadedImages);
+
+            // Cập nhật lại danh sách ảnh vào tệp JSON của Album 3
+            var updatedJsonData = JsonSerializer.Serialize(imageListMakeup5);
+            System.IO.File.WriteAllText(albumFilePath, updatedJsonData);
+
+            // Chuyển hướng lại trang Index để hiển thị danh sách hình ảnh mới
+            return RedirectToAction("Index");
+        }
+
+        // upload hình ảnh danh sách 6
+        [HttpPost]
+        public IActionResult UploadMakeup6(List<IFormFile> file){
+            if (file.Count == 0)
+            {
+                ViewBag.MessageMakeup6 = "No files selected.";
+                return RedirectToAction("Index");
+            }
+
+            // Lưu trữ các ảnh đã upload
+            var uploadedImages = new List<string>();
+
+            foreach (var img in file)
+            {
+                var fileName = Path.GetFileName(img.FileName);
+                var filePath = Path.Combine(baseUploadMakeupPath6, fileName);
+
+                // Lưu ảnh vào thư mục
+                using (var stream = new FileStream(filePath, FileMode.Create))
+                {
+                    img.CopyTo(stream);
+                }
+
+                // Lưu đường dẫn ảnh
+                var imageUrl = $"/uploads/imagesMakeup6/{fileName}";
+                uploadedImages.Add(imageUrl);
+            }
+
+            // Cập nhật danh sách hình ảnh
+            var albumFilePath = Path.Combine(baseUploadMakeupPath6,"Makeup6.json");
+            List<string> imageListMakeup6;
+            if (System.IO.File.Exists(albumFilePath))
+            {
+                var existingData = System.IO.File.ReadAllText(albumFilePath);
+                imageListMakeup6 = JsonSerializer.Deserialize<List<string>>(existingData) ?? new List<string>();
+            }
+            else
+            {
+                imageListMakeup6 = new List<string>();
+            }
+
+            // Thêm các ảnh mới vào danh sách
+            imageListMakeup6.AddRange(uploadedImages);
+
+            // Cập nhật lại danh sách ảnh vào tệp JSON của Album 3
+            var updatedJsonData = JsonSerializer.Serialize(imageListMakeup6);
+            System.IO.File.WriteAllText(albumFilePath, updatedJsonData);
+
+            // Chuyển hướng lại trang Index để hiển thị danh sách hình ảnh mới
+            return RedirectToAction("Index");
+        }
+
+        // upload hình ảnh danh sách 7
+        [HttpPost]
+        public IActionResult UploadMakeup7(List<IFormFile> file){
+            if (file.Count == 0)
+            {
+                ViewBag.MessageMakeup7 = "No files selected.";
+                return RedirectToAction("Index");
+            }
+
+            // Lưu trữ các ảnh đã upload
+            var uploadedImages = new List<string>();
+
+            foreach (var img in file)
+            {
+                var fileName = Path.GetFileName(img.FileName);
+                var filePath = Path.Combine(baseUploadMakeupPath7, fileName);
+
+                // Lưu ảnh vào thư mục
+                using (var stream = new FileStream(filePath, FileMode.Create))
+                {
+                    img.CopyTo(stream);
+                }
+
+                // Lưu đường dẫn ảnh
+                var imageUrl = $"/uploads/imagesMakeup7/{fileName}";
+                uploadedImages.Add(imageUrl);
+            }
+
+            // Cập nhật danh sách hình ảnh
+            var albumFilePath = Path.Combine(baseUploadMakeupPath7,"Makeup7.json");
+            List<string> imageListMakeup7;
+            if (System.IO.File.Exists(albumFilePath))
+            {
+                var existingData = System.IO.File.ReadAllText(albumFilePath);
+                imageListMakeup7 = JsonSerializer.Deserialize<List<string>>(existingData) ?? new List<string>();
+            }
+            else
+            {
+                imageListMakeup7 = new List<string>();
+            }
+
+            // Thêm các ảnh mới vào danh sách
+            imageListMakeup7.AddRange(uploadedImages);
+
+            // Cập nhật lại danh sách ảnh vào tệp JSON của Album 3
+            var updatedJsonData = JsonSerializer.Serialize(imageListMakeup7);
+            System.IO.File.WriteAllText(albumFilePath, updatedJsonData);
+
+            // Chuyển hướng lại trang Index để hiển thị danh sách hình ảnh mới
+            return RedirectToAction("Index");
+        }
+
+        // upload hình ảnh danh sách 8
+
+        [HttpPost]
+        public IActionResult UploadMakeup8(List<IFormFile> file){
+            if (file.Count == 0)
+            {
+                ViewBag.MessageMakeup8 = "No files selected.";
+                return RedirectToAction("Index");
+            }
+
+            // Lưu trữ các ảnh đã upload
+            var uploadedImages = new List<string>();
+
+            foreach (var img in file)
+            {
+                var fileName = Path.GetFileName(img.FileName);
+                var filePath = Path.Combine(baseUploadMakeupPath8, fileName);
+
+                // Lưu ảnh vào thư mục
+                using (var stream = new FileStream(filePath, FileMode.Create))
+                {
+                    img.CopyTo(stream);
+                }
+
+                // Lưu đường dẫn ảnh
+                var imageUrl = $"/uploads/imagesMakeup8/{fileName}";
+                uploadedImages.Add(imageUrl);
+            }
+
+            // Cập nhật danh sách hình ảnh
+            var albumFilePath = Path.Combine(baseUploadMakeupPath8,"Makeup8.json");
+            List<string> imageListMakeup8;
+            if (System.IO.File.Exists(albumFilePath))
+            {
+                var existingData = System.IO.File.ReadAllText(albumFilePath);
+                imageListMakeup8 = JsonSerializer.Deserialize<List<string>>(existingData) ?? new List<string>();
+            }
+            else
+            {
+                imageListMakeup8 = new List<string>();
+            }
+
+            // Thêm các ảnh mới vào danh sách
+            imageListMakeup8.AddRange(uploadedImages);
+
+            // Cập nhật lại danh sách ảnh vào tệp JSON của Album 3
+            var updatedJsonData = JsonSerializer.Serialize(imageListMakeup8);
+            System.IO.File.WriteAllText(albumFilePath, updatedJsonData);
+
+            // Chuyển hướng lại trang Index để hiển thị danh sách hình ảnh mới
+            return RedirectToAction("Index");
+        }
+
+        // upload danh sách hình ảnh trang trang phục cưới 
+        // upload danh sách hình ảnh GownPage 1
+        [HttpPost]
+        public IActionResult UploadGownPage1(List<IFormFile> file){
+            if (file.Count == 0)
+            {
+                ViewBag.MessageGownPage1 = "No files selected.";
+                return RedirectToAction("Index");
+            }
+
+            // Lưu trữ các ảnh đã upload
+            var uploadedImages = new List<string>();
+
+            foreach (var img in file)
+            {
+                var fileName = Path.GetFileName(img.FileName);
+                var filePath = Path.Combine(baseUploadGownPagePath1, fileName);
+
+                // Lưu ảnh vào thư mục
+                using (var stream = new FileStream(filePath, FileMode.Create))
+                {
+                    img.CopyTo(stream);
+                }
+
+                // Lưu đường dẫn ảnh
+                var imageUrl = $"/uploads/imagesGownPage1/{fileName}";
+                uploadedImages.Add(imageUrl);
+            }
+
+            // Cập nhật danh sách hình ảnh
+            var albumFilePath = Path.Combine(baseUploadGownPagePath1,"GownPage1.json");
+            List<string> imageListGownPage1;
+            if (System.IO.File.Exists(albumFilePath))
+            {
+                var existingData = System.IO.File.ReadAllText(albumFilePath);
+                imageListGownPage1 = JsonSerializer.Deserialize<List<string>>(existingData) ?? new List<string>();
+            }
+            else
+            {
+                imageListGownPage1 = new List<string>();
+            }
+
+            // Thêm các ảnh mới vào danh sách
+            imageListGownPage1.AddRange(uploadedImages);
+
+            // Cập nhật lại danh sách ảnh vào tệp JSON của Album 3
+            var updatedJsonData = JsonSerializer.Serialize(imageListGownPage1);
+            System.IO.File.WriteAllText(albumFilePath, updatedJsonData);
+
+            // Chuyển hướng lại trang Index để hiển thị danh sách hình ảnh mới
+            return RedirectToAction("Index");
+        }
+
+        // upload danh sách hình ảnh GownPage 2
+        [HttpPost]
+        public IActionResult UploadGownPage2(List<IFormFile> file){
+            if (file.Count == 0)
+            {
+                ViewBag.MessageGownPage2 = "No files selected.";
+                return RedirectToAction("Index");
+            }
+
+            // Lưu trữ các ảnh đã upload
+            var uploadedImages = new List<string>();
+
+            foreach (var img in file)
+            {
+                var fileName = Path.GetFileName(img.FileName);
+                var filePath = Path.Combine(baseUploadGownPagePath2, fileName);
+
+                // Lưu ảnh vào thư mục
+                using (var stream = new FileStream(filePath, FileMode.Create))
+                {
+                    img.CopyTo(stream);
+                }
+
+                // Lưu đường dẫn ảnh
+                var imageUrl = $"/uploads/imagesGownPage2/{fileName}";
+                uploadedImages.Add(imageUrl);
+            }
+
+            // Cập nhật danh sách hình ảnh
+            var albumFilePath = Path.Combine(baseUploadGownPagePath2,"GownPage2.json");
+            List<string> imageListGownPage2;
+            if (System.IO.File.Exists(albumFilePath))
+            {
+                var existingData = System.IO.File.ReadAllText(albumFilePath);
+                imageListGownPage2 = JsonSerializer.Deserialize<List<string>>(existingData) ?? new List<string>();
+            }
+            else
+            {
+                imageListGownPage2 = new List<string>();
+            }
+
+            // Thêm các ảnh mới vào danh sách
+            imageListGownPage2.AddRange(uploadedImages);
+
+            // Cập nhật lại danh sách ảnh vào tệp JSON của Album 3
+            var updatedJsonData = JsonSerializer.Serialize(imageListGownPage2);
+            System.IO.File.WriteAllText(albumFilePath, updatedJsonData);
+
+            // Chuyển hướng lại trang Index để hiển thị danh sách hình ảnh mới
+            return RedirectToAction("Index");
+        }
+
+        // upload danh sách hình ảnh GownPage 3
+        [HttpPost]
+        public IActionResult UploadGownPage3(List<IFormFile> file){
+            if (file.Count == 0)
+            {
+                ViewBag.MessageGownPage3 = "No files selected.";
+                return RedirectToAction("Index");
+            }
+
+            // Lưu trữ các ảnh đã upload
+            var uploadedImages = new List<string>();
+
+            foreach (var img in file)
+            {
+                var fileName = Path.GetFileName(img.FileName);
+                var filePath = Path.Combine(baseUploadGownPagePath3, fileName);
+
+                // Lưu ảnh vào thư mục
+                using (var stream = new FileStream(filePath, FileMode.Create))
+                {
+                    img.CopyTo(stream);
+                }
+
+                // Lưu đường dẫn ảnh
+                var imageUrl = $"/uploads/imagesGownPage3/{fileName}";
+                uploadedImages.Add(imageUrl);
+            }
+
+            // Cập nhật danh sách hình ảnh
+            var albumFilePath = Path.Combine(baseUploadGownPagePath3,"GownPage3.json");
+            List<string> imageListGownPage3;
+            if (System.IO.File.Exists(albumFilePath))
+            {
+                var existingData = System.IO.File.ReadAllText(albumFilePath);
+                imageListGownPage3 = JsonSerializer.Deserialize<List<string>>(existingData) ?? new List<string>();
+            }
+            else
+            {
+                imageListGownPage3 = new List<string>();
+            }
+
+            // Thêm các ảnh mới vào danh sách
+            imageListGownPage3.AddRange(uploadedImages);
+
+            // Cập nhật lại danh sách ảnh vào tệp JSON của Album 3
+            var updatedJsonData = JsonSerializer.Serialize(imageListGownPage3);
+            System.IO.File.WriteAllText(albumFilePath, updatedJsonData);
+
+            // Chuyển hướng lại trang Index để hiển thị danh sách hình ảnh mới
+            return RedirectToAction("Index");
+        }
+
+        // upload danh sách hình ảnh GownPage 4
+        [HttpPost]
+        public IActionResult UploadGownPage4(List<IFormFile> file){
+            if (file.Count == 0)
+            {
+                ViewBag.MessageGownPage4 = "No files selected.";
+                return RedirectToAction("Index");
+            }
+
+            // Lưu trữ các ảnh đã upload
+            var uploadedImages = new List<string>();
+
+            foreach (var img in file)
+            {
+                var fileName = Path.GetFileName(img.FileName);
+                var filePath = Path.Combine(baseUploadGownPagePath4, fileName);
+
+                // Lưu ảnh vào thư mục
+                using (var stream = new FileStream(filePath, FileMode.Create))
+                {
+                    img.CopyTo(stream);
+                }
+
+                // Lưu đường dẫn ảnh
+                var imageUrl = $"/uploads/imagesGownPage4/{fileName}";
+                uploadedImages.Add(imageUrl);
+            }
+
+            // Cập nhật danh sách hình ảnh
+            var albumFilePath = Path.Combine(baseUploadGownPagePath2,"GownPage4.json");
+            List<string> imageListGownPage4;
+            if (System.IO.File.Exists(albumFilePath))
+            {
+                var existingData = System.IO.File.ReadAllText(albumFilePath);
+                imageListGownPage4 = JsonSerializer.Deserialize<List<string>>(existingData) ?? new List<string>();
+            }
+            else
+            {
+                imageListGownPage4 = new List<string>();
+            }
+
+            // Thêm các ảnh mới vào danh sách
+            imageListGownPage4.AddRange(uploadedImages);
+
+            // Cập nhật lại danh sách ảnh vào tệp JSON của Album 3
+            var updatedJsonData = JsonSerializer.Serialize(imageListGownPage4);
+            System.IO.File.WriteAllText(albumFilePath, updatedJsonData);
+
+            // Chuyển hướng lại trang Index để hiển thị danh sách hình ảnh mới
+            return RedirectToAction("Index");
+        }
+
+        // upload danh sách hình ảnh GownPage 5
+        [HttpPost]
+        public IActionResult UploadGownPage5(List<IFormFile> file){
+            if (file.Count == 0)
+            {
+                ViewBag.MessageGownPage5 = "No files selected.";
+                return RedirectToAction("Index");
+            }
+
+            // Lưu trữ các ảnh đã upload
+            var uploadedImages = new List<string>();
+
+            foreach (var img in file)
+            {
+                var fileName = Path.GetFileName(img.FileName);
+                var filePath = Path.Combine(baseUploadGownPagePath5, fileName);
+
+                // Lưu ảnh vào thư mục
+                using (var stream = new FileStream(filePath, FileMode.Create))
+                {
+                    img.CopyTo(stream);
+                }
+
+                // Lưu đường dẫn ảnh
+                var imageUrl = $"/uploads/imagesGownPage5/{fileName}";
+                uploadedImages.Add(imageUrl);
+            }
+
+            // Cập nhật danh sách hình ảnh
+            var albumFilePath = Path.Combine(baseUploadGownPagePath5,"GownPage5.json");
+            List<string> imageListGownPage5;
+            if (System.IO.File.Exists(albumFilePath))
+            {
+                var existingData = System.IO.File.ReadAllText(albumFilePath);
+                imageListGownPage5 = JsonSerializer.Deserialize<List<string>>(existingData) ?? new List<string>();
+            }
+            else
+            {
+                imageListGownPage5 = new List<string>();
+            }
+
+            // Thêm các ảnh mới vào danh sách
+            imageListGownPage5.AddRange(uploadedImages);
+
+            // Cập nhật lại danh sách ảnh vào tệp JSON của Album 3
+            var updatedJsonData = JsonSerializer.Serialize(imageListGownPage5);
+            System.IO.File.WriteAllText(albumFilePath, updatedJsonData);
+
+            // Chuyển hướng lại trang Index để hiển thị danh sách hình ảnh mới
+            return RedirectToAction("Index");
+        }
+
+        // upload danh sách hình ảnh GownPage 6
+        [HttpPost]
+        public IActionResult UploadGownPage6(List<IFormFile> file){
+            if (file.Count == 0)
+            {
+                ViewBag.MessageGownPage6 = "No files selected.";
+                return RedirectToAction("Index");
+            }
+
+            // Lưu trữ các ảnh đã upload
+            var uploadedImages = new List<string>();
+
+            foreach (var img in file)
+            {
+                var fileName = Path.GetFileName(img.FileName);
+                var filePath = Path.Combine(baseUploadGownPagePath6, fileName);
+
+                // Lưu ảnh vào thư mục
+                using (var stream = new FileStream(filePath, FileMode.Create))
+                {
+                    img.CopyTo(stream);
+                }
+
+                // Lưu đường dẫn ảnh
+                var imageUrl = $"/uploads/imagesGownPage6/{fileName}";
+                uploadedImages.Add(imageUrl);
+            }
+
+            // Cập nhật danh sách hình ảnh
+            var albumFilePath = Path.Combine(baseUploadGownPagePath6,"GownPage6.json");
+            List<string> imageListGownPage6;
+            if (System.IO.File.Exists(albumFilePath))
+            {
+                var existingData = System.IO.File.ReadAllText(albumFilePath);
+                imageListGownPage6 = JsonSerializer.Deserialize<List<string>>(existingData) ?? new List<string>();
+            }
+            else
+            {
+                imageListGownPage6 = new List<string>();
+            }
+
+            // Thêm các ảnh mới vào danh sách
+            imageListGownPage6.AddRange(uploadedImages);
+
+            // Cập nhật lại danh sách ảnh vào tệp JSON của Album 3
+            var updatedJsonData = JsonSerializer.Serialize(imageListGownPage6);
+            System.IO.File.WriteAllText(albumFilePath, updatedJsonData);
+
+            // Chuyển hướng lại trang Index để hiển thị danh sách hình ảnh mới
+            return RedirectToAction("Index");
+        }
+
+        // upload danh sách hình ảnh GownPage 7
+        [HttpPost]
+        public IActionResult UploadGownPage7(List<IFormFile> file){
+            if (file.Count == 0)
+            {
+                ViewBag.MessageGownPage7 = "No files selected.";
+                return RedirectToAction("Index");
+            }
+
+            // Lưu trữ các ảnh đã upload
+            var uploadedImages = new List<string>();
+
+            foreach (var img in file)
+            {
+                var fileName = Path.GetFileName(img.FileName);
+                var filePath = Path.Combine(baseUploadGownPagePath7, fileName);
+
+                // Lưu ảnh vào thư mục
+                using (var stream = new FileStream(filePath, FileMode.Create))
+                {
+                    img.CopyTo(stream);
+                }
+
+                // Lưu đường dẫn ảnh
+                var imageUrl = $"/uploads/imagesGownPage7/{fileName}";
+                uploadedImages.Add(imageUrl);
+            }
+
+            // Cập nhật danh sách hình ảnh
+            var albumFilePath = Path.Combine(baseUploadGownPagePath7,"GownPage7.json");
+            List<string> imageListGownPage7;
+            if (System.IO.File.Exists(albumFilePath))
+            {
+                var existingData = System.IO.File.ReadAllText(albumFilePath);
+                imageListGownPage7 = JsonSerializer.Deserialize<List<string>>(existingData) ?? new List<string>();
+            }
+            else
+            {
+                imageListGownPage7 = new List<string>();
+            }
+
+            // Thêm các ảnh mới vào danh sách
+            imageListGownPage7.AddRange(uploadedImages);
+
+            // Cập nhật lại danh sách ảnh vào tệp JSON của Album 3
+            var updatedJsonData = JsonSerializer.Serialize(imageListGownPage7);
+            System.IO.File.WriteAllText(albumFilePath, updatedJsonData);
+
+            // Chuyển hướng lại trang Index để hiển thị danh sách hình ảnh mới
+            return RedirectToAction("Index");
+        }
+
+        // upload danh sách hình ảnh GownPage 8
+        [HttpPost]
+        public IActionResult UploadGownPage8(List<IFormFile> file){
+            if (file.Count == 0)
+            {
+                ViewBag.MessageGownPage8 = "No files selected.";
+                return RedirectToAction("Index");
+            }
+
+            // Lưu trữ các ảnh đã upload
+            var uploadedImages = new List<string>();
+
+            foreach (var img in file)
+            {
+                var fileName = Path.GetFileName(img.FileName);
+                var filePath = Path.Combine(baseUploadGownPagePath8, fileName);
+
+                // Lưu ảnh vào thư mục
+                using (var stream = new FileStream(filePath, FileMode.Create))
+                {
+                    img.CopyTo(stream);
+                }
+
+                // Lưu đường dẫn ảnh
+                var imageUrl = $"/uploads/imagesGownPage8/{fileName}";
+                uploadedImages.Add(imageUrl);
+            }
+
+            // Cập nhật danh sách hình ảnh
+            var albumFilePath = Path.Combine(baseUploadGownPagePath8,"GownPage8.json");
+            List<string> imageListGownPage8;
+            if (System.IO.File.Exists(albumFilePath))
+            {
+                var existingData = System.IO.File.ReadAllText(albumFilePath);
+                imageListGownPage8 = JsonSerializer.Deserialize<List<string>>(existingData) ?? new List<string>();
+            }
+            else
+            {
+                imageListGownPage8 = new List<string>();
+            }
+
+            // Thêm các ảnh mới vào danh sách
+            imageListGownPage8.AddRange(uploadedImages);
+
+            // Cập nhật lại danh sách ảnh vào tệp JSON của Album 3
+            var updatedJsonData = JsonSerializer.Serialize(imageListGownPage8);
+            System.IO.File.WriteAllText(albumFilePath, updatedJsonData);
+
+            // Chuyển hướng lại trang Index để hiển thị danh sách hình ảnh mới
+            return RedirectToAction("Index");
+        }
+
+
 
 
 

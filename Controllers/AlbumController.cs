@@ -29,7 +29,6 @@ public class AlbumController : Controller{
     private readonly string baseUploadPath8 = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/uploads/imagesAlbum8");
 
 
-
     private readonly ILogger <AlbumController> _logger;
     public AlbumController (ILogger<AlbumController> logger)
     {
